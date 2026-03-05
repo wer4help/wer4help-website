@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+/* header */
+
+.header{
+    position:relative;
+    margin-top:40px;
+}
+
+.title{
+    font-size:40px;
+}
+
+.subtitle{
+    color:#444;
+    margin-bottom:30px;
+}
+
+/* watermark */
+
+.logo-watermark{
+    position:absolute;
+    right:60px;
+    top:0;
+    width:120px;
+    opacity:0.15;
+}
+
+/* events section */
+
+.events-section{
+    margin-top:40px;
+}
+
+/* dropdown boxes */
+
+.event-box{
+    width:750px;
+    max-width:90%;
+    margin:20px auto;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.event-box.inner{
+    width:95%;
+}
+
+/* summary */
+
+summary{
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* pdf button */
+
+.pdf-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#2b7cff;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.pdf-btn:hover{
+    background:#1a5fd1;
+}
+
+/* back button */
+
+.btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:12px 25px;
+    background:#2b7cff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#1a5fd1;
+}

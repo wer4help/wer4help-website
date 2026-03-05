@@ -1,26 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Events - WeR4Help</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/events.css') }}">
+
 </head>
 
 <body>
 
-<h1>WeR4Help Events</h1>
+<div class="header">
 
-<p>WeR4Help organizes several social and volunteering activities.</p>
+<h1 class="title">Events</h1>
 
-<ul>
-<li>Village Development Programs</li>
-<li>Environmental Awareness Drives</li>
-<li>Educational Support Programs</li>
-<li>Community Service Activities</li>
-</ul>
+<img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
 
-<br>
+</div>
 
-<a href="{{ url_for('home') }}">Go Back to Home</a>
+<p class="subtitle">
+Explore the social initiatives conducted by WeR4Help.
+</p>
+
+<div class="events-section">
+
+<!-- Events 2025 -->
+
+<details class="event-box">
+
+<summary>Events 2025</summary>
+
+<details class="event-box inner">
+
+<a href="{{ url_for('static', filename='reports/blood_donation_2025.pdf') }}"
+View Activity Report
+</a>
+
+</details>
+
+<details class="event-box inner">
+
+<summary>Tree Plantation Drive</summary>
+
+<a href="{{ url_for('static', filename='reports/tree_plantation_2025.pdf') }}" 
+target="_blank" class="pdf-btn">
+View Activity Report
+</a>
+
+</details>
+
+</details>
+
+
+<!-- Events 2024 -->
+
+<details class="event-box">
+
+<summary>Events 2024</summary>
+
+<details class="event-box inner">
+
+<summary>Orphanage Visit</summary>
+
+<a href="{{ url_for('static', filename='reports/orphanage_visit_2024.pdf') }}" 
+target="_blank" class="pdf-btn">
+View Activity Report
+</a>
+
+</details>
+
+<details class="event-box inner">
+
+<summary>Food Distribution</summary>
+
+<a href="{{ url_for('static', filename='reports/food_distribution_2024.pdf') }}" 
+target="_blank" class="pdf-btn">
+View Activity Report
+</a>
+
+</details>
+
+</details>
+
+</div>
+
+<a href="{{ url_for('home') }}" class="btn">Back to Home</a>
 
 </body>
 

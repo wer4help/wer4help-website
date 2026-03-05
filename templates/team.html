@@ -2,28 +2,135 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Team - WeR4Help</title>
 
 <link rel="stylesheet"
-href="{{ url_for('static', filename='css/style.css') }}">
+href="{{ url_for('static', filename='css/team.css') }}">
+
 </head>
 
 <body>
 
-<h1>Our Team</h1>
+<div class="header">
 
-<p>The WeR4Help initiative is driven by passionate student volunteers.</p>
+<h1 class="title">Our Teams</h1>
 
-<ul>
-<li>President</li>
-<li>Vice President</li>
-<li>Event Coordinators</li>
-<li>Volunteer Members</li>
-</ul>
+<img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
 
-<a href="{{ url_for('home') }}">Back to Home</a>
+</div>
+
+<p class="subtitle">
+The WeR4Help initiative is driven by passionate student volunteers.
+</p>
+
+<div class="team-section">
+
+
+<!-- Team 2023 -->
+
+<details class="team-box">
+
+<summary>Team 2023</summary>
+
+<img src="{{ url_for('static', filename='images/teams/team2023-2024.png') }}" class="team-img">
+
+<details class="team-box inner">
+
+<summary>Volunteers</summary>
+
+<a href="{{ url_for('static', filename='images/volunteers/WeR4Help_2023_Batch.pdf') }}" 
+target="_blank" class="pdf-btn">
+View Volunteer List
+</a>
+
+</details>
+
+</details>
+
+
+
+<!-- Team 2024-2025 -->
+
+<details class="team-box">
+
+<summary>Team 2024-2025</summary>
+
+<details class="team-box inner">
+
+<summary>Core Team</summary>
+
+<img src="{{ url_for('static', filename='images/teams/team2024-2025(core).png') }}" class="team-img">
+
+</details>
+
+<details class="team-box inner">
+
+<summary>Gov Team</summary>
+
+<img src="{{ url_for('static', filename='images/teams/team2024-2025(gov).png') }}" class="team-img">
+
+</details>
+
+<details class="team-box inner">
+
+<summary>Volunteers</summary>
+
+<a href="{{ url_for('static', filename='images/volunteers/WeR4Help_2024_Batch.pdf') }}" 
+target="_blank" class="pdf-btn">
+View Volunteer List
+</a>
+
+</details>
+
+
+</details>
+
+
+
+<!-- Team 2025-2026 -->
+
+<details class="team-box">
+
+<summary>Team 2025-2026</summary>
+
+<details class="team-box inner">
+
+<summary>Core Team</summary>
+
+<img src="{{ url_for('static', filename='images/teams/team2025-2026(core).png') }}" class="team-img">
+
+</details>
+
+<details class="team-box inner">
+
+<summary>Gov Team</summary>
+
+<img src="{{ url_for('static', filename='images/teams/team2025-2026(gov).png') }}" class="team-img">
+
+</details>
+
+<details class="team-box inner">
+
+<summary>Volunteers</summary>
+
+<a href="{{ url_for('static', filename='pdf/team2025_volunteers.pdf') }}" 
+target="_blank" class="pdf-btn">
+View Volunteer List
+</a>
+
+</details>
+
+</details>
+
+
+</div>
+
+<a href="{{ url_for('home') }}" class="btn">Back to Home</a>
 
 </body>
+
 </html>
