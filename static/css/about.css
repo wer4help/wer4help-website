@@ -1,0 +1,28 @@
+.about-text{
+    width:700px;
+    max-width:90%;
+    margin:30px auto;
+    font-size:18px;
+    line-height:1.6;
+}
+
+
+/* animated button */
+
+.back-btn{
+    display:inline-block;
+    margin-top:40px;
+    background:#2b7cff;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#1a5fd1;
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.2);
+}

@@ -2,23 +2,54 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Contact - WeR4Help</title>
 
-<link rel="stylesheet"
-href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+
 </head>
 
 <body>
 
-<h1>Contact Us</h1>
+<!-- Watermark -->
 
-<p>Email: wer4help@gvpce.ac.in</p>
-<p>Phone: +91 7075214131</p>
+<img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
 
-<a href="/">Back to Home</a>
+<h1 class="title">Contact Us</h1>
+
+
+<div class="contact-container">
+
+<a href="mailto:wer4help@gvpce.ac.in" class="contact-card email-card">
+<h2>Email</h2>
+<p>wer4help@gvpce.ac.in</p>
+</a>
+
+<a href="tel:+917075214131" class="contact-card phone-card">
+<h2>Phone</h2>
+<p>+91 7075214131</p>
+</a>
+
+<a href="https://instagram.com/wer4help" target="_blank" class="contact-card insta-card">
+<h2>Instagram</h2>
+<p>@wer4help</p>
+</a>
+
+<a href="https://linkedin.com" target="_blank" class="contact-card linkedin-card">
+<h2>LinkedIn</h2>
+<p>WeR4Help</p>
+</a>
+
+</div>
+
+
+<a href="{{ url_for('home') }}" class="btn back-btn">
+Back to Home
+</a>
 
 </body>
 </html>

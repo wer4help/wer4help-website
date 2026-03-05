@@ -8,8 +8,8 @@
 
 <title>WeR4Help GVPCE</title>
 
-<link rel="stylesheet"
-href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
 
@@ -43,7 +43,13 @@ href="{{ url_for('static', filename='css/style.css') }}">
 
 <nav class="navbar">
 
-<ul>
+<!-- Hamburger Icon -->
+
+<div class="menu-icon" onclick="toggleMenu()">
+☰
+</div>
+
+<ul id="nav-links">
 
 <li><a href="{{ url_for('home') }}">Home</a></li>
 
