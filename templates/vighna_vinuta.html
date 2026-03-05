@@ -2,25 +2,51 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vighna Vinuta</title>
 
-<link rel="stylesheet"
-href="{{ url_for('static', filename='css/style.css') }}">
+<title>Vighna Vinuta - WeR4Help</title>
+
 <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/vighna_vinuta.css') }}">
+
 </head>
 
 <body>
 
-<h1>Vighna Vinuta</h1>
+<!-- Watermark -->
 
-<p>
+<img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
+
+<h1 class="title">Vighna Vinuta</h1>
+
+<p class="subtitle">
 Vighna Vinuta is a flagship initiative conducted by WeR4Help
 to support communities and promote social responsibility.
 </p>
 
-<a href="{{ url_for('home') }}">Back to Home</a>
+
+<div class="vighna-box">
+
+<p>
+The Vighna Vinuta initiative focuses on helping communities by
+organizing social service activities, awareness programs,
+and support initiatives for people in need.
+</p>
+
+<p>
+Through this program, volunteers from WeR4Help actively
+participate in community development activities and work
+towards building a more compassionate and responsible society.
+</p>
+
+</div>
+
+
+<a href="{{ url_for('home') }}" class="btn back-btn">
+Back to Home
+</a>
 
 </body>
 </html>

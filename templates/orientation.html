@@ -2,25 +2,51 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Orientation</title>
 
-<link rel="stylesheet"
-href="{{ url_for('static', filename='css/style.css') }}">
+<title>Orientation - WeR4Help</title>
+
 <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/orientation.css') }}">
+
 </head>
 
 <body>
 
-<h1>Orientation Program</h1>
+<!-- Watermark -->
 
-<p>
-The orientation program introduces new members to
-WeR4Help activities and volunteering opportunities.
+<img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
+
+<h1 class="title">Orientation Program</h1>
+
+<p class="subtitle">
+The orientation program introduces new members to WeR4Help activities,
+volunteering opportunities, and the impact of community service.
 </p>
 
-<a href="{{ url_for('home') }}">Back to Home</a>
+
+<div class="orientation-box">
+
+<p>
+During the orientation session, students learn about the mission of
+WeR4Help, previous social initiatives, and how they can actively
+participate in volunteering activities organized by the club.
+</p>
+
+<p>
+The program helps students understand the importance of social
+responsibility and encourages them to contribute to meaningful
+community projects.
+</p>
+
+</div>
+
+
+<a href="{{ url_for('home') }}" class="btn back-btn">
+Back to Home
+</a>
 
 </body>
 </html>

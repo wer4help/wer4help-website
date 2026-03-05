@@ -2,28 +2,88 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Activity Reports</title>
 
-<link rel="stylesheet"
-href="{{ url_for('static', filename='css/style.css') }}">
+<title>Activity Reports - WeR4Help</title>
+
 <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/activity_reports.css') }}">
+
 </head>
 
 <body>
 
-<h1>Activity Reports</h1>
+<!-- Watermark -->
 
-<p>Here you can find reports of the activities conducted by WeR4Help.</p>
+<img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
 
-<ul>
-<li>2026 Activities</li>
-<li>2025 Activities</li>
-<li>2024 Activities</li>
-</ul>
+<h1 class="title">Activity Reports</h1>
 
-<a href="{{ url_for('home') }}">Back to Home</a>
+<p class="subtitle">
+Explore reports of the activities conducted by WeR4Help.
+</p>
+
+
+<div class="reports-section">
+
+<!-- 2026 -->
+
+<details class="report-box">
+
+<summary>2026 Activities</summary>
+
+<a href="{{ url_for('static', filename='reports/activity_2026_1.pdf') }}" target="_blank" class="report-btn">
+Activity Report 1
+</a>
+
+<a href="{{ url_for('static', filename='reports/activity_2026_2.pdf') }}" target="_blank" class="report-btn">
+Activity Report 2
+</a>
+
+</details>
+
+
+<!-- 2025 -->
+
+<details class="report-box">
+
+<summary>2025 Activities</summary>
+
+<a href="{{ url_for('static', filename='reports/activity_2025_1.pdf') }}" target="_blank" class="report-btn">
+Activity Report 1
+</a>
+
+<a href="{{ url_for('static', filename='reports/activity_2025_2.pdf') }}" target="_blank" class="report-btn">
+Activity Report 2
+</a>
+
+</details>
+
+
+<!-- 2024 -->
+
+<details class="report-box">
+
+<summary>2024 Activities</summary>
+
+<a href="{{ url_for('static', filename='reports/activity_2024_1.pdf') }}" target="_blank" class="report-btn">
+Activity Report 1
+</a>
+
+<a href="{{ url_for('static', filename='reports/activity_2024_2.pdf') }}" target="_blank" class="report-btn">
+Activity Report 2
+</a>
+
+</details>
+
+</div>
+
+
+<a href="{{ url_for('home') }}" class="btn back-btn">
+Back to Home
+</a>
 
 </body>
 </html>

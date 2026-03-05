@@ -1,0 +1,30 @@
+.vighna-box{
+    width:700px;
+    max-width:90%;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    line-height:1.7;
+    font-size:18px;
+}
+
+/* back button animation */
+
+.back-btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:12px 25px;
+    background:#2b7cff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#1a5fd1;
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.2);
+}
