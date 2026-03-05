@@ -1,0 +1,163 @@
+/* ===== GENERAL ===== */
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+}
+
+/* ===== HEADER ===== */
+
+.top-banner{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 40px;
+
+background:white;
+
+}
+
+/* each section */
+
+.logo-box{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+width:30%;
+
+}
+
+/* logos */
+
+.logo-box img{
+
+height:130px;
+
+width:auto;
+
+margin-bottom:3px;
+
+}
+
+/* text */
+
+.logo-box h1{
+
+margin:0;
+
+font-size:36px;
+
+}
+
+.logo-box h2{
+
+margin:0;
+
+font-size:20px;
+
+line-height:1.3;
+
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+
+background:#222;
+
+}
+
+.navbar ul{
+
+list-style:none;
+
+display:flex;
+
+justify-content:center;
+
+padding:12px;
+
+margin:0;
+
+}
+
+.navbar li{
+
+margin:0 20px;
+
+}
+
+.navbar a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+text-align:center;
+
+padding:100px 20px;
+
+background:white;
+
+}
+
+.hero button{
+
+padding:12px 25px;
+
+background:blue;
+
+color:white;
+
+border:none;
+
+border-radius:5px;
+
+cursor:pointer;
+
+}
+
+/* ===== SECTIONS ===== */
+
+.section{
+
+text-align:center;
+
+padding:60px 20px;
+
+background:white;
+
+margin-top:20px;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+text-align:center;
+
+padding:20px;
+
+background:#222;
+
+color:white;
+
+}
