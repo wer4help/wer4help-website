@@ -1,3 +1,36 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+    margin:0;
+}
+
+
+/* ===== HEADER ===== */
+
+.header{
+    position:relative;
+    padding-top:40px;
+}
+
+.title{
+    font-size:42px;
+}
+
+
+/* ===== WATERMARK LOGO ===== */
+
+.logo-watermark{
+    position:absolute;
+    right:60px;
+    top:20px;
+    width:130px;
+    opacity:0.15;
+}
+
+
+/* ===== CONTACT SECTION ===== */
+
 .contact-container{
     display:flex;
     flex-direction:column;
@@ -6,7 +39,8 @@
     margin-top:40px;
 }
 
-/* base card */
+
+/* ===== CONTACT CARD (BLOCK STYLE) ===== */
 
 .contact-card{
     display:block;
@@ -14,41 +48,19 @@
     padding:25px;
     border-radius:12px;
     text-decoration:none;
-    color:white;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    color:#333;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
     transition:0.3s;
 }
 
 .contact-card:hover{
     transform:translateY(-6px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
-/* Email */
 
-.email-card{
-    background:#e74c3c;
-}
-
-/* Phone */
-
-.phone-card{
-    background:#27ae60;
-}
-
-/* Instagram */
-
-.insta-card{
-    background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-}
-
-/* LinkedIn */
-
-.linkedin-card{
-    background:#0077b5;
-}
-
-/* text */
+/* ===== TEXT ===== */
 
 .contact-card h2{
     margin-bottom:8px;
@@ -58,7 +70,8 @@
     font-size:16px;
 }
 
-/* back button */
+
+/* ===== BACK BUTTON ===== */
 
 .back-btn{
     display:inline-block;

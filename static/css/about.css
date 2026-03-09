@@ -1,28 +1,117 @@
-.about-text{
-    width:700px;
-    max-width:90%;
-    margin:30px auto;
-    font-size:18px;
-    line-height:1.6;
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+    margin:0;
 }
 
 
-/* animated button */
+/* HEADER */
 
-.back-btn{
+.header{
+    position:relative;
+    padding-top:40px;
+}
+
+.title{
+    font-size:42px;
+}
+
+
+/* PARAGRAPH */
+
+.subtitle{
+    width:900px;
+    max-width:90%;
+    margin:30px auto;
+    font-size:18px;
+    color:#444;
+    line-height:1.7;
+    text-align:justify;
+}
+
+
+/* WATERMARK */
+
+.logo-watermark{
+    position:absolute;
+    right:60px;
+    top:20px;
+    width:130px;
+    opacity:0.15;
+}
+
+
+/* PHOTO SECTION */
+
+.photo-section{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+
+/* PHOTO CARD */
+
+.photo-card{
+    width:260px;
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.photo-card:hover{
+    transform:translateY(-6px);
+}
+
+
+/* IMAGE */
+
+.photo-card img{
+    width:100%;
+    height:auto;   /* automatically adjusts to image size */
+    display:block;
+}
+
+
+/* NAME */
+
+.photo-name{
+    font-size:18px;
+    font-weight:bold;
+    margin-top:12px;
+}
+
+
+/* ROLE */
+
+.photo-role{
+    font-size:14px;
+    color:#666;
+    margin-bottom:15px;
+}
+
+
+/* BUTTON */
+
+.btn{
     display:inline-block;
     margin-top:40px;
+    margin-bottom:50px;
+    padding:12px 25px;
     background:#2b7cff;
     color:white;
     text-decoration:none;
-    padding:12px 25px;
     border-radius:8px;
     font-weight:bold;
     transition:0.3s;
 }
 
-.back-btn:hover{
+.btn:hover{
     background:#1a5fd1;
-    transform:translateY(-4px);
-    box-shadow:0 8px 18px rgba(0,0,0,0.2);
+    transform:translateY(-2px);
 }

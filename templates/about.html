@@ -8,37 +8,73 @@
 
 <title>About - WeR4Help</title>
 
-<link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
 
 </head>
 
 <body>
 
-<!-- Watermark -->
-
-<img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
-
+<div class="header">
 
 <h1 class="title">About WeR4Help</h1>
 
-<p class="about-text">
+<img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
 
-WeR4Help is a student-driven initiative that promotes social responsibility,
-volunteering, and community service.
+</div>
 
-The club organizes activities such as social awareness programs,
-community outreach, volunteering opportunities, and support initiatives
-for people in need.
 
-Through these activities, students develop leadership, empathy,
-and a sense of responsibility towards society.
+<p class="subtitle">
+
+WeR4Help is a social service club functioning under CFSR at GVPCE(A) with the aim of supporting underprivileged families and spreading kindness in the society. The club was started in 2011 by three volunteers from the EEE branch with a simple intention to help people who silently struggle for their daily survival.
+
+Unlike many service activities that focus mainly on orphanages or old-age homes, WeR4Help follows a unique approach. Every year the club conducts surveys in underprivileged areas to identify families who hesitate to ask others for help. These families are then adopted by the club and provided with monthly groceries and medical support.
+
+The club is self-funded and conducts eco-friendly Ganesha idol sales during Vinayaka Chavithi. The funds collected help support adopted families and carry out all club initiatives.
+
+WeR4Help continues its journey guided by the motto:
+
+<b>"No one can help everyone, but everyone can help someone."</b>
 
 </p>
 
-<a href="{{ url_for('home') }}" class="btn back-btn">
-Back to Home
-</a>
+
+<!-- Mentor Section -->
+
+<div class="photo-section">
+
+<div class="photo-card">
+
+<img src="{{ url_for('static', filename='images/principal.png') }}">
+
+<p class="photo-name">Dr. A. B. Koteswara Rao</p>
+<p class="photo-role">Principal and Director of CFSR- GVPCE</p>
+
+</div>
+
+
+<div class="photo-card">
+
+<img src="{{ url_for('static', filename='images/cvnr.jpeg') }}">
+
+<p class="photo-name">Dr. C. V. Nageswara Rao</p>
+<p class="photo-role">Associate Director - CFSR</p>
+
+</div>
+
+
+<div class="photo-card">
+
+<img src="{{ url_for('static', filename='images/lateefa madam.jpeg') }}">
+
+<p class="photo-name">Ms. Lateefa Shaik</p>
+<p class="photo-role">Faculty Coordinator</p>
+
+</div>
+
+</div>
+
+
+<a href="{{ url_for('home') }}" class="btn">Back to Home</a>
 
 </body>
 </html>
