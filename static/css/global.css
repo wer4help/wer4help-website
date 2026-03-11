@@ -68,29 +68,31 @@ img{
    LOGO SECTION
 ================================= */
 
+/* ===== LOGO SECTION ===== */
+
 .logo-section{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:10px;
   flex:1;
+  min-width:0;
 }
 
 /* logo */
 
 .logo-section img{
-  height:44px;
+  height:40px;
   flex-shrink:0;
 }
 
 /* title */
 
 .logo-section h1{
-  font-size:26px;
+  font-size:24px;
   font-weight:600;
   color:#222;
   white-space:nowrap;
 }
-
 /* =================================
    MENU ICON
 ================================= */
@@ -272,13 +274,19 @@ footer{
     height:34px;
   }
 
-  .logo-section h1{
-    font-size:20px;
-  }
+ .logo-section h1{
+  font-size:18px;
+}
 
   .menu-icon{
-    width:24px;
-    gap:5px;
+  width:28px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  cursor:pointer;
+  flex-shrink:0;
+  margin-left:10px;
+}
   }
 
   .hero{
