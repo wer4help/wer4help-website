@@ -64,7 +64,7 @@ img{
   position:sticky;
   top:0;
   z-index:1000;
-  gap:20px;   /* prevents overlap */
+  gap:20px;
 }
 
 /* logo */
@@ -95,6 +95,7 @@ img{
   flex-direction:column;
   gap:6px;
   cursor:pointer;
+  flex-shrink:0;
 }
 
 .menu-icon span{
@@ -105,13 +106,29 @@ img{
 }
 
 /* =================================
+   HAMBURGER ANIMATION
+================================= */
+
+.menu-icon.open span:nth-child(1){
+  transform:rotate(45deg) translate(5px,5px);
+}
+
+.menu-icon.open span:nth-child(2){
+  opacity:0;
+}
+
+.menu-icon.open span:nth-child(3){
+  transform:rotate(-45deg) translate(6px,-6px);
+}
+
+/* =================================
    FULL SCREEN MENU
 ================================= */
 
 #fullscreen-menu{
   position:fixed;
   top:0;
-  left:-100%;
+  left:0;
   width:100%;
   height:100vh;
   background:#111;
@@ -120,14 +137,15 @@ img{
   justify-content:center;
   align-items:center;
   gap:28px;
-  transition:0.4s ease;
-  z-index:999;
+  transform:translateY(-100%);
+  transition:transform 0.4s ease;
+  z-index:2000;
 }
 
 /* when menu opens */
 
 #fullscreen-menu.active{
-  left:0;
+  transform:translateY(0);
 }
 
 #fullscreen-menu a{
@@ -212,14 +230,4 @@ footer{
     font-size:18px;
   }
 
-}
-/* ===== HAMBURGER ANIMATION ===== */
-
-.menu-icon{
-  width:28px;
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-  cursor:pointer;
-  flex-shrink:0;  /* prevents collapsing */
 }
