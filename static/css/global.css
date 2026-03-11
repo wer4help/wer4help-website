@@ -15,8 +15,6 @@ body{
   line-height:1.6;
 }
 
-/* prevent content from touching edges */
-
 .container{
   width:90%;
   max-width:1200px;
@@ -58,7 +56,7 @@ img{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:14px 20px;
+  padding:12px 20px;
   background:white;
   box-shadow:0 2px 10px rgba(0,0,0,0.08);
   position:sticky;
@@ -66,27 +64,31 @@ img{
   z-index:1000;
 }
 
-/* logo section */
+/* =================================
+   LOGO SECTION
+================================= */
 
 .logo-section{
   display:flex;
   align-items:center;
-  gap:10px;
-  min-width:0;
+  gap:12px;
+  flex:1;
 }
 
+/* logo */
+
 .logo-section img{
-  height:48px;
+  height:44px;
   flex-shrink:0;
 }
+
+/* title */
 
 .logo-section h1{
   font-size:26px;
   font-weight:600;
   color:#222;
   white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
 }
 
 /* =================================
@@ -126,7 +128,7 @@ img{
 }
 
 /* =================================
-   FULL SCREEN MENU
+   FULLSCREEN MENU
 ================================= */
 
 #fullscreen-menu{
@@ -146,8 +148,6 @@ img{
   z-index:2000;
 }
 
-/* when menu opens */
-
 #fullscreen-menu.active{
   transform:translateY(0);
 }
@@ -163,12 +163,55 @@ img{
   color:#ff4b5c;
 }
 
-/* Donate Button */
+/* Donate button */
 
 #fullscreen-menu .donate-btn{
   background:#ff4b5c;
   padding:10px 22px;
   border-radius:25px;
+}
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero{
+  text-align:center;
+  padding:80px 20px;
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-content{
+  max-width:600px;
+}
+
+.hero h2{
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.tagline{
+  font-size:20px;
+  color:#555;
+  margin-bottom:30px;
+}
+
+.join-btn{
+  padding:12px 28px;
+  background:#2b7cff;
+  color:white;
+  border:none;
+  border-radius:6px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.join-btn:hover{
+  background:#1a5fd4;
 }
 
 /* =================================
@@ -196,11 +239,19 @@ footer{
   }
 
   .logo-section img{
-    height:42px;
+    height:38px;
   }
 
   .logo-section h1{
     font-size:22px;
+  }
+
+  .hero h2{
+    font-size:32px;
+  }
+
+  .tagline{
+    font-size:18px;
   }
 
   #fullscreen-menu a{
@@ -218,16 +269,28 @@ footer{
   }
 
   .logo-section img{
-    height:36px;
+    height:34px;
   }
 
   .logo-section h1{
-    font-size:18px;
+    font-size:20px;
   }
 
   .menu-icon{
     width:24px;
     gap:5px;
+  }
+
+  .hero{
+    padding:60px 15px;
+  }
+
+  .hero h2{
+    font-size:26px;
+  }
+
+  .tagline{
+    font-size:16px;
   }
 
   #fullscreen-menu a{
