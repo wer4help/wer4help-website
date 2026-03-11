@@ -1,11 +1,20 @@
-function toggleMenu(){
+function toggleMenu() {
 
-let menu = document.getElementById("fullscreen-menu");
+  const menu = document.getElementById("fullscreen-menu");
+  const icon = document.querySelector(".menu-icon");
 
-menu.classList.toggle("show");
+  menu.classList.toggle("active");
+  icon.classList.toggle("open");
 
 }
 
+document.querySelectorAll("#fullscreen-menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("fullscreen-menu").classList.remove("active");
+    document.querySelector(".menu-icon").classList.remove("open");
+  });
+});
+
 function joinClub(){
-alert("Welcome to WeR4Help!");
+  alert("Welcome to WeR4Help! Thank you for showing interest in joining our club.");
 }
