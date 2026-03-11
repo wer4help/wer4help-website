@@ -6,7 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Acknowledgment - WeR4Help</title>
+<title>Acknowledgment | WeR4Help</title>
+
+<link rel="icon" href="{{ url_for('static', filename='images/WRFH LOGO.png') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/acknowledgment.css') }}">
@@ -15,16 +19,59 @@
 
 <body>
 
-<!-- Watermark -->
-<img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
+<!-- COLLEGE BANNER -->
+
+<div class="announcement-banner">
+  <img src="{{ url_for('static', filename='images/clg_banner.png') }}" 
+       alt="GVP College Banner"
+       class="banner-img">
+</div>
+
+
+<!-- HEADER -->
+
+<header class="header-bar">
+
+  <div class="logo-section">
+    <img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" alt="WeR4Help Logo">
+    <h1>WeR4Help</h1>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</header>
+
+
+<!-- FULLSCREEN MENU -->
+
+<nav id="fullscreen-menu">
+
+<a href="{{ url_for('home') }}">Home</a>
+<a href="{{ url_for('about') }}">About</a>
+<a href="{{ url_for('leadership') }}">Leadership Legacy</a>
+<a href="{{ url_for('team') }}">Team</a>
+<a href="{{ url_for('events') }}">Events</a>
+<a href="{{ url_for('impact') }}">Impact & Achievements</a>
+<a href="{{ url_for('acknowledgment') }}">Acknowledgment</a>
+<a href="{{ url_for('contact') }}">Contact</a>
+<a href="{{ url_for('donate') }}" class="donate-btn">Donate</a>
+
+</nav>
+
+
+<!-- MAIN CONTENT -->
+
+<main>
 
 <h1 class="title">Acknowledgment</h1>
 
-<p class="subtitle">
-A hearty welcome to the WeR4Help Club Website.
-</p>
-
 <div class="ack-box">
+
+<p>A hearty welcome to the WeR4Help Club Website.</p>
 
 <p>
 Looking back, our club laid its foundation in 2011. Since then, every tenure has marked a new chapter of learning,
@@ -33,35 +80,35 @@ the torch forward with the same dedication, energy, and sense of responsibility.
 </p>
 
 <p>
-As we all know, WeR4Help is a self-owned student club. It is a matter of great pride that our club has been
-formed by students, run by students, and led by students of GVPCE from 2011 to the present day.
+As we all know, WeR4Help is a self-owned student club. It is a matter of great pride that our club has been formed
+by students, run by students, and led by students of GVPCE from 2011 to the present day.
 </p>
 
 <p>
-During my tenure, I strongly believed that leadership should go beyond merely repeating the initiatives
-of previous years. My focus was on introducing meaningful initiatives that could create a long-term
-impact for future generations of the club.
+During my tenure, I strongly believed that leadership should go beyond merely repeating the initiatives of previous
+years. My focus was on introducing meaningful initiatives that could create a long-term impact for future
+generations of the club.
 </p>
 
 <p>
-From this vision emerged the idea that every tenure, event, and team contribution should be digitally
-documented and accessible so that anyone connected to WeR4Help can explore our journey and accomplishments.
+From this vision emerged the idea that every tenure, event, and team contribution should be digitally documented
+and accessible so that anyone connected to WeR4Help can explore our journey and accomplishments.
 </p>
 
 <p>
-This vision led to the development of the WeR4Help Club Website — a platform where the history,
-initiatives, and contributions of each tenure can be preserved and accessed by everyone.
+This vision led to the development of the WeR4Help Club Website — a platform where the history, initiatives,
+and contributions of each tenure can be preserved and accessed by everyone.
 </p>
 
 <p>
-During this tenure we also worked towards obtaining an institutional domain email ID for the club
-and launched <b>Aashraya Connect</b>, a structured survey initiative aimed at creating organized records
-and long-term data for our social service activities.
+During this tenure we also worked towards obtaining an institutional domain email ID for the club and launched
+<b>Aashraya Connect</b>, a structured survey initiative aimed at creating organized records and long-term data
+for our social service activities.
 </p>
 
 <p>
-Together with <b>T. Sai Shashank</b>, we collected the necessary information and developed this website
-so that the initiatives of our club become digitally accessible to everyone.
+Together with <b>T. Sai Shashank</b>, we collected the necessary information and developed this website with the
+vision that the initiatives of our club should be digitally accessible to everyone.
 </p>
 
 <p>
@@ -70,12 +117,12 @@ and <b>Dr. C. V. Nageswara Rao</b>, Associate Director of CFSR, for their encour
 </p>
 
 <p>
-We also thank our Faculty Coordinator <b>Ms. Lateefa Shaik</b> for her constant guidance in all initiatives.
+We also thank our Faculty Coordinator <b>Ms. Lateefa Shaik</b> for her guidance and support.
 </p>
 
 <p>
-A special appreciation goes to <b>T. Sai Shashank</b>, Club Advisor (2025–2026), for his dedication
-and efforts in helping bring this website from concept to completion.
+A special appreciation goes to <b>T. Sai Shashank</b>, Club Advisor (2025–2026),
+for helping bring this website from concept to completion.
 </p>
 
 <p>
@@ -91,25 +138,31 @@ marking another milestone in the journey of our club.
 <div class="president-section">
 
 <div class="president-frame">
-<!-- Add president photo later -->
-<!-- <img src="{{ url_for('static', filename='images/anush.png') }}"> -->
+<!-- Add President Photo Later -->
 </div>
 
-<h3>Your sincerely,</h3>
+<p class="signature">Yours sincerely,</p>
 
 <h2>M. Anush</h2>
 
 <p class="designation">
 Student President<br>
-WeR4Help 2025-26
+WeR4Help 2025–26
 </p>
 
 </div>
 
+</main>
 
-<a href="{{ url_for('home') }}" class="btn back-btn">
-Back to Home
-</a>
+
+<!-- FOOTER -->
+
+<footer>
+<p>© 2026 WeR4Help • GVPCE</p>
+</footer>
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
 </html>
