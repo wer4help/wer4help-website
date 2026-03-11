@@ -24,7 +24,7 @@ def team():
 
 @app.route("/activity-reports")
 def activity_reports():
-    return render_template("activity_reports.html")
+    return render_template("leadership.html")
 
 @app.route("/orientation")
 def orientation():
