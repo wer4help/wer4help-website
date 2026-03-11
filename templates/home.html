@@ -4,7 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WeR4Help GVPCE</title>
+  <title>WeR4Help | GVPCE</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ url_for('static', filename='images/WRFH LOGO.png') }}">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
@@ -13,18 +21,21 @@
 
   <!-- COLLEGE BANNER -->
   <div class="announcement-banner">
-    <img src="{{ url_for('static', filename='images/clg_banner.png') }}" class="banner-img">
+    <img src="{{ url_for('static', filename='images/clg_banner.png') }}" 
+         alt="GVP College Banner" 
+         class="banner-img">
   </div>
 
-  <!-- HEADER BAR -->
+  <!-- HEADER -->
   <header class="header-bar">
 
     <div class="logo-section">
-      <img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}">
+      <img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" alt="WeR4Help Logo">
       <h1>WeR4Help</h1>
     </div>
 
-    <div class="menu-icon" onclick="toggleMenu()">
+    <!-- MENU ICON -->
+    <div class="menu-icon" onclick="toggleMenu()" aria-label="Open Menu">
       <span></span>
       <span></span>
       <span></span>
@@ -32,34 +43,47 @@
 
   </header>
 
-  <!-- FULL SCREEN MENU -->
-  <div id="fullscreen-menu">
+  <!-- FULL SCREEN NAVIGATION MENU -->
+  <nav id="fullscreen-menu">
+
     <a href="{{ url_for('home') }}">Home</a>
     <a href="{{ url_for('about') }}">About</a>
-    <a href="{{ url_for('contact') }}">Contact</a>
-    <a href="{{ url_for('events') }}">Events</a>
+    <a href="{{ url_for('leadership') }}">Leadership Legacy</a>
     <a href="{{ url_for('team') }}">Team</a>
-    <a href="{{ url_for('activity_reports') }}">Activity Reports</a>
-    <a href="{{ url_for('orientation') }}">Orientation</a>
-    <a href="{{ url_for('vighna_vinuta') }}">Vighna Vinuta</a>
-    <a href="{{ url_for('donate') }}">Donate Us</a>
-  </div>
+    <a href="{{ url_for('events') }}">Events</a>
+    <a href="{{ url_for('impact') }}">Impact & Achievements</a>
+    <a href="{{ url_for('acknowledgment') }}">Acknowledgment</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+    <a href="{{ url_for('donate') }}" class="donate-btn">Donate</a>
+
+  </nav>
 
   <!-- HERO SECTION -->
-  <section class="hero">
-    <h2>Welcome to WeR4Help</h2>
-    <p>
-      Nobody can help Everyone,<br>
-      But Everyone can help someone
-    </p>
-    <button onclick="joinClub()">Join Us</button>
-  </section>
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-content">
+        <h2>Welcome to WeR4Help</h2>
+
+        <p class="tagline">
+          Nobody can help everyone,<br>
+          but everyone can help someone.
+        </p>
+
+        <button class="join-btn" onclick="joinClub()">Join Us</button>
+      </div>
+
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 WeR4Help</p>
+    <p>© 2026 WeR4Help • GVPCE</p>
   </footer>
 
+  <!-- JS -->
   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
