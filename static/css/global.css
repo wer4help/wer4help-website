@@ -64,6 +64,7 @@ img{
   position:sticky;
   top:0;
   z-index:1000;
+  gap:20px;   /* prevents overlap */
 }
 
 /* logo */
@@ -214,14 +215,11 @@ footer{
 }
 /* ===== HAMBURGER ANIMATION ===== */
 
-.menu-icon.open span:nth-child(1){
-  transform: rotate(45deg) translate(5px,5px);
-}
-
-.menu-icon.open span:nth-child(2){
-  opacity:0;
-}
-
-.menu-icon.open span:nth-child(3){
-  transform: rotate(-45deg) translate(6px,-6px);
+.menu-icon{
+  width:28px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  cursor:pointer;
+  flex-shrink:0;  /* prevents collapsing */
 }
