@@ -7,6 +7,7 @@ font-size:34px;
 color:#222;
 }
 
+
 /* ===== TEXT CONTAINER ===== */
 
 .ack-box{
@@ -15,7 +16,9 @@ margin:40px auto;
 background:white;
 padding:35px;
 border-radius:10px;
+
 box-shadow:0 4px 15px rgba(0,0,0,0.08);
+
 line-height:1.8;
 font-size:16px;
 color:#444;
@@ -24,6 +27,7 @@ color:#444;
 .ack-box p{
 margin-bottom:16px;
 }
+
 
 /* ===== PRESIDENT SECTION ===== */
 
@@ -35,9 +39,11 @@ margin:50px 0;
 .president-frame{
 width:140px;
 height:170px;
+
 border:3px solid #333;
 margin:auto;
 margin-bottom:15px;
+
 border-radius:8px;
 background:#eee;
 }
@@ -50,6 +56,30 @@ font-size:16px;
 .designation{
 color:#555;
 }
+
+
+/* ===== BACK BUTTON (ADDED) ===== */
+
+.back-btn{
+display:inline-block;
+margin:40px auto;
+padding:12px 25px;
+
+background:#2b7cff;
+color:white;
+text-decoration:none;
+
+border-radius:8px;
+
+transition:0.3s;
+}
+
+.back-btn:hover{
+background:#1a5fd1;
+transform:translateY(-4px);
+box-shadow:0 8px 18px rgba(0,0,0,0.2);
+}
+
 
 /* ===== MOBILE FIX ===== */
 
