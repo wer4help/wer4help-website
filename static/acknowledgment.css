@@ -1,44 +1,60 @@
-/* MAIN CONTAINER */
+/* =================================
+   MAIN CONTAINER
+================================= */
 
 .ack-container{
 max-width:900px;
 margin:60px auto;
-padding:0 30px;
+padding:0 25px;
 }
 
 
-/* TITLE */
+/* =================================
+   TITLE
+================================= */
 
 .title{
 text-align:center;
-font-size:44px;
+font-size:42px;
 margin-bottom:30px;
+color:#222;
 }
 
 
-/* WATERMARK */
+/* =================================
+   WATERMARK
+================================= */
 
 .logo-watermark{
 position:absolute;
 right:8%;
 top:220px;
-width:160px;
+width:150px;
 opacity:0.08;
 pointer-events:none;
 }
 
 
-/* TEXT */
+/* =================================
+   TEXT CONTENT
+================================= */
 
 .ack-text{
-font-size:20px;
+font-size:19px;
 line-height:1.9;
 text-align:justify;
 color:#333;
+margin-bottom:30px;
+}
+
+.ack-text p{
+margin-bottom:18px;
 }
 
 
-/* PRESIDENT SECTION */
+/* =================================
+   PRESIDENT SECTION
+================================= */
 
 .president-section{
 text-align:center;
@@ -46,7 +62,7 @@ margin-top:60px;
 }
 
 
-/* PHOTO */
+/* PRESIDENT PHOTO */
 
 .president-photo{
 width:150px;
@@ -54,7 +70,7 @@ height:180px;
 object-fit:cover;
 border-radius:10px;
 border:3px solid #333;
-margin-bottom:10px;
+margin-bottom:12px;
 }
 
 
@@ -63,12 +79,20 @@ margin-bottom:10px;
 .signature{
 font-style:italic;
 margin-top:10px;
+font-size:18px;
+}
+
+.designation{
+color:#555;
+margin-top:6px;
 }
 
 
-/* MOBILE */
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 .title{
 font-size:34px;
@@ -76,10 +100,33 @@ font-size:34px;
 
 .ack-text{
 font-size:16px;
+line-height:1.8;
 }
 
 .logo-watermark{
 display:none;
+}
+
+.president-photo{
+width:120px;
+height:150px;
+}
+
+}
+
+
+@media (max-width:480px){
+
+.ack-container{
+padding:0 18px;
+}
+
+.title{
+font-size:28px;
+}
+
+.ack-text{
+font-size:15px;
 }
 
 }
