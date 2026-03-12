@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
+{% block title %}Orientation | WeR4Help{% endblock %}
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block css %}
 
-<title>Orientation - WeR4Help</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/impact.css') }}">
+{% endblock %}
 
-<link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/orientation.css') }}">
-
-</head>
-
-<body>
-
-<!-- Watermark -->
+{% block content %}
 
 <img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
 
@@ -25,7 +17,6 @@
 The orientation program introduces new members to WeR4Help activities,
 volunteering opportunities, and the impact of community service.
 </p>
-
 
 <div class="orientation-box">
 
@@ -43,10 +34,8 @@ community projects.
 
 </div>
 
-
 <a href="{{ url_for('home') }}" class="btn back-btn">
 Back to Home
 </a>
 
-</body>
-</html>
+{% endblock %}

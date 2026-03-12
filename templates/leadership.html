@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
+{% block title %}Leadership Legacy | WeR4Help{% endblock %}
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block css %}
 
-<title>Leadership Legacy - WeR4Help</title>
-
-<link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/leadership.css') }}">
+{% endblock %}
 
-</head>
+{% block content %}
 
-<body>
-
-<!-- Watermark -->
 <img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
 
 <h1 class="title">Leadership Legacy</h1>
@@ -101,5 +94,4 @@ Honouring the leaders who have guided <b>WeR4Help</b>.
 Back to Home
 </a>
 
-</body>
-</html>
+{% endblock %}

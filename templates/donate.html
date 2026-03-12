@@ -1,53 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Donate - WeR4Help</title>
+{% block title %}Donate | WeR4Help{% endblock %}
 
-<link rel="stylesheet" 
-href="{{ url_for('static', filename='css/donate.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
-</head>
+{% block css %}
 
-<body>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/donate.css') }}">
+{% endblock %}
 
-<h1>Donate Us</h1>
+{% block content %}
 
-<p>
-Your support helps us conduct social initiatives and
-community service activities.
+<h1 class="title">Support WeR4Help</h1>
+
+<p class="donate-text">
+Your support helps us conduct social initiatives and community service activities.
 </p>
 
-<p>
-For donations please contact the WeR4Help team.
+<p class="donate-text">
+You can support our initiatives by donating through UPI.
 </p>
 
+<h3 class="qr-title">Scan the QR Code</h3>
 
-</body>
-</html><!DOCTYPE html>
-<html>
+<div class="qr-container">
+<img src="{{ url_for('static', filename='images/qr.png') }}" class="qr-image">
+</div>
 
-<head>
-<title>Donate - WeR4Help</title>
-</head>
+<p class="upi-text">
+UPI ID: wer4help@gvpce
+</p>
 
-<body>
+<a href="{{ url_for('home') }}" class="back-btn">
+Back to Home
+</a>
 
-<h1>Support WeR4Help</h1>
-
-<p>You can support our social initiatives by donating through UPI.</p>
-
-<h3>Scan the QR Code</h3>
-<img src="{{ url_for('static', filename='images/qr.png') }}" width="250">
-
-<p>UPI ID: </p>
-
-<br>
-
-<a href="{{ url_for('home') }}" class="back-btn">Back to Home</a>
-
-</body>
-
-</html>
+{% endblock %}

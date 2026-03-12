@@ -1,91 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WeR4Help | GVPCE</title>
+{% block title %}WeR4Help | GVPCE{% endblock %}
 
-  <!-- Favicon -->
-  <link rel="icon" href="{{ url_for('static', filename='images/WRFH LOGO.png') }}">
+{% block css %}
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
+{% block content %}
 
-<body>
+<section class="hero">
 
-  <!-- COLLEGE BANNER -->
-  <div class="announcement-banner">
-    <img src="{{ url_for('static', filename='images/clg_banner.png') }}" 
-         alt="GVP College Banner" 
-         class="banner-img">
+  <div class="hero-content">
+
+```
+<h2>Welcome to WeR4Help</h2>
+
+<p class="tagline">
+  Nobody can help everyone,<br>
+  but everyone can help someone.
+</p>
+
+<button class="join-btn" onclick="joinClub()">Join Us</button>
+```
+
   </div>
 
-  <!-- HEADER -->
-  <header class="header-bar">
+</section>
 
-    <div class="logo-section">
-      <img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" alt="WeR4Help Logo">
-      <h1>WeR4Help</h1>
-    </div>
-
-    <!-- MENU ICON -->
-    <div class="menu-icon" onclick="toggleMenu()" aria-label="Open Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-  </header>
-
-  <!-- FULL SCREEN NAVIGATION MENU -->
-  <nav id="fullscreen-menu">
-
-    <a href="{{ url_for('home') }}">Home</a>
-    <a href="{{ url_for('about') }}">About</a>
-    <a href="{{ url_for('leadership') }}">Leadership Legacy</a>
-    <a href="{{ url_for('team') }}">Team</a>
-    <a href="{{ url_for('events') }}">Events</a>
-    <a href="{{ url_for('impact') }}">Impact & Achievements</a>
-    <a href="{{ url_for('acknowledgment') }}">Acknowledgment</a>
-    <a href="{{ url_for('contact') }}">Contact</a>
-    <a href="{{ url_for('donate') }}" class="donate-btn">Donate</a>
-
-  </nav>
-
-  <!-- HERO SECTION -->
-  <main>
-
-    <section class="hero">
-
-      <div class="hero-content">
-        <h2>Welcome to WeR4Help</h2>
-
-        <p class="tagline">
-          Nobody can help everyone,<br>
-          but everyone can help someone.
-        </p>
-
-        <button class="join-btn" onclick="joinClub()">Join Us</button>
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 WeR4Help • GVPCE</p>
-  </footer>
-
-  <!-- JS -->
-  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
-</body>
-
-</html>
+{% endblock %}

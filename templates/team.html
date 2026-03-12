@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
+{% block title %}Team | WeR4Help{% endblock %}
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block css %}
 
-<title>Team - WeR4Help</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/team.css') }}">
+{% endblock %}
 
-<link rel="stylesheet"
-href="{{ url_for('static', filename='css/team.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
-
-</head>
-
-<body>
+{% block content %}
 
 <div class="header">
 
@@ -30,7 +23,6 @@ The WeR4Help initiative is driven by passionate student volunteers.
 
 <div class="team-section">
 
-
 <!-- Team 2023 -->
 
 <details class="team-box">
@@ -45,14 +37,11 @@ The WeR4Help initiative is driven by passionate student volunteers.
 
 <a href="{{ url_for('static', filename='images/volunteers/WeR4Help_2023_Batch.pdf') }}" 
 target="_blank" class="pdf-btn">
-View Volunteer List
-</a>
+View Volunteer List </a>
 
 </details>
 
 </details>
-
-
 
 <!-- Team 2024-2025 -->
 
@@ -82,15 +71,11 @@ View Volunteer List
 
 <a href="{{ url_for('static', filename='images/volunteers/WeR4Help_2024_Batch.pdf') }}" 
 target="_blank" class="pdf-btn">
-View Volunteer List
-</a>
+View Volunteer List </a>
 
 </details>
 
-
 </details>
-
-
 
 <!-- Team 2025-2026 -->
 
@@ -120,18 +105,14 @@ View Volunteer List
 
 <a href="{{ url_for('static', filename='pdf/team2025_volunteers.pdf') }}" 
 target="_blank" class="pdf-btn">
-View Volunteer List
-</a>
+View Volunteer List </a>
 
 </details>
 
 </details>
-
 
 </div>
 
 <a href="{{ url_for('home') }}" class="btn">Back to Home</a>
 
-</body>
-
-</html>
+{% endblock %}

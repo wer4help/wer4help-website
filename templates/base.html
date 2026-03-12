@@ -64,7 +64,41 @@ FULLSCREEN NAVIGATION MENU
 
 <nav id="fullscreen-menu">
 
-<a href="{{ url_for('home') }}">Home</a> <a href="{{ url_for('about') }}">About</a> <a href="{{ url_for('leadership') }}">Leadership Legacy</a> <a href="{{ url_for('team') }}">Team</a> <a href="{{ url_for('events') }}">Events</a> <a href="{{ url_for('impact') }}">Impact & Achievements</a> <a href="{{ url_for('acknowledgment') }}">Acknowledgment</a> <a href="{{ url_for('contact') }}">Contact</a> <a href="{{ url_for('donate') }}" class="donate-btn">Donate</a>
+<a href="{{ url_for('home') }}" 
+class="{% if request.endpoint == 'home' %}active{% endif %}">
+Home </a>
+
+<a href="{{ url_for('about') }}" 
+class="{% if request.endpoint == 'about' %}active{% endif %}">
+About </a>
+
+<a href="{{ url_for('leadership') }}" 
+class="{% if request.endpoint == 'leadership' %}active{% endif %}">
+Leadership Legacy </a>
+
+<a href="{{ url_for('team') }}" 
+class="{% if request.endpoint == 'team' %}active{% endif %}">
+Team </a>
+
+<a href="{{ url_for('events') }}" 
+class="{% if request.endpoint == 'events' %}active{% endif %}">
+Events </a>
+
+<a href="{{ url_for('impact') }}" 
+class="{% if request.endpoint == 'impact' %}active{% endif %}">
+Impact & Achievements </a>
+
+<a href="{{ url_for('acknowledgment') }}" 
+class="{% if request.endpoint == 'acknowledgment' %}active{% endif %}">
+Acknowledgment </a>
+
+<a href="{{ url_for('contact') }}" 
+class="{% if request.endpoint == 'contact' %}active{% endif %}">
+Contact </a>
+
+<a href="{{ url_for('donate') }}" 
+class="donate-btn {% if request.endpoint == 'donate' %}active{% endif %}">
+Donate </a>
 
 </nav>
 

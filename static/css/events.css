@@ -1,117 +1,162 @@
-body{
-font-family: Arial, sans-serif;
-background:#f4f4f4;
-text-align:center;
-margin:0;
-}
-
-/* header */
+/* =================================
+   EVENTS PAGE
+================================= */
 
 .header{
-position:relative;
-margin-top:40px;
+  text-align:center;
+  margin-top:40px;
+  position:relative;
 }
 
 .title{
-font-size:40px;
+  font-size:40px;
+  font-weight:600;
 }
 
 .subtitle{
-color:#444;
-margin-bottom:30px;
-font-size:16px;
+  text-align:center;
+  margin-top:10px;
+  font-size:18px;
+  color:#666;
 }
 
-/* watermark */
+
+/* =================================
+   WATERMARK LOGO
+================================= */
 
 .logo-watermark{
-position:absolute;
-right:60px;
-top:0;
-width:120px;
-opacity:0.15;
+  position:absolute;
+  top:-20px;
+  right:20px;
+  opacity:0.08;
+  width:180px;
+  pointer-events:none;
 }
 
-/* events section */
+
+/* =================================
+   EVENTS SECTION
+================================= */
 
 .events-section{
-margin-top:40px;
+  width:90%;
+  max-width:700px;
+  margin:40px auto;
 }
 
-/* event boxes */
+
+/* =================================
+   EVENT BOX
+================================= */
 
 .event-box{
-width:750px;
-max-width:90%;
-margin:20px auto;
-background:white;
-padding:15px;
-border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,0.15);
+  background:white;
+  border-radius:10px;
+  margin-bottom:20px;
+  padding:0;
+  overflow:hidden;
+
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+
+  transition:0.3s;
 }
 
-/* inner boxes */
-
-.event-box.inner{
-width:95%;
-margin-top:15px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+.event-box:hover{
+  transform:translateY(-3px);
 }
 
-/* summary text */
 
-summary{
-font-size:20px;
-font-weight:bold;
-cursor:pointer;
+/* =================================
+   SUMMARY (TENURE TITLE)
+================================= */
+
+.event-box summary{
+  font-size:20px;
+  font-weight:500;
+  padding:18px 20px;
+  cursor:pointer;
+  list-style:none;
+  position:relative;
 }
 
-/* pdf button */
+/* arrow icon */
+
+.event-box summary::after{
+  content:"+";
+  position:absolute;
+  right:20px;
+  font-size:22px;
+  transition:0.3s;
+}
+
+.event-box[open] summary::after{
+  content:"−";
+}
+
+
+/* =================================
+   PDF BUTTON
+================================= */
 
 .pdf-btn{
-display:inline-block;
-margin-top:15px;
-padding:10px 20px;
-background:#2b7cff;
-color:white;
-text-decoration:none;
-border-radius:6px;
+  display:inline-block;
+  margin:20px;
+  padding:10px 20px;
+
+  background:#2b7cff;
+  color:white;
+  border-radius:6px;
+
+  font-size:15px;
+  transition:0.3s;
 }
 
 .pdf-btn:hover{
-background:#1a5fd1;
+  background:#1a5fd4;
 }
 
-/* back button */
+
+/* =================================
+   BACK BUTTON
+================================= */
 
 .btn{
-display:inline-block;
-margin-top:40px;
-padding:12px 25px;
-background:#2b7cff;
-color:white;
-text-decoration:none;
-border-radius:8px;
+  display:block;
+  width:160px;
+  margin:40px auto;
+
+  text-align:center;
+  padding:10px;
+
+  background:#ff4b5c;
+  color:white;
+
+  border-radius:6px;
+  transition:0.3s;
 }
 
 .btn:hover{
-background:#1a5fd1;
+  background:#e03c4b;
 }
 
-/* mobile */
 
-@media (max-width:600px){
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media(max-width:480px){
 
 .title{
-font-size:28px;
-}
-
-summary{
-font-size:17px;
+  font-size:30px;
 }
 
 .subtitle{
-padding:0 15px;
+  font-size:16px;
+}
+
+.event-box summary{
+  font-size:18px;
 }
 
 }
