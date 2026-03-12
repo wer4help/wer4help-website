@@ -103,6 +103,7 @@ img{
   flex-direction:column;
   gap:6px;
   cursor:pointer;
+  flex-shrink:0;
 }
 
 .menu-icon span{
@@ -131,7 +132,7 @@ img{
 
 
 /* =================================
-   FULLSCREEN MENU
+   FULLSCREEN MENU (Improved Animation)
 ================================= */
 
 #fullscreen-menu{
@@ -150,24 +151,47 @@ img{
   gap:22px;
 
   transform:translateY(-100%);
-  transition:transform 0.4s ease;
+  opacity:0;
+
+  transition:transform 0.45s ease, opacity 0.35s ease;
 
   z-index:2000;
 }
 
 #fullscreen-menu.active{
   transform:translateY(0);
+  opacity:1;
 }
 
 #fullscreen-menu a{
   color:white;
   font-size:22px;
   font-weight:500;
-  transition:0.3s;
+
+  opacity:0;
+  transform:translateY(15px);
+
+  transition:0.35s;
+}
+
+#fullscreen-menu.active a{
+  opacity:1;
+  transform:translateY(0);
 }
 
 #fullscreen-menu a:hover{
   color:#ff4b5c;
+  transform:scale(1.05);
+}
+
+
+/* =================================
+   ACTIVE PAGE HIGHLIGHT
+================================= */
+
+#fullscreen-menu a.active{
+  color:#ff4b5c;
+  font-weight:600;
 }
 
 
@@ -212,12 +236,24 @@ footer{
 
 @media (max-width:480px){
 
+  .header-bar{
+    padding:10px 14px;
+  }
+
+  .logo-section{
+    gap:8px;
+  }
+
   .logo-section img{
     height:34px;
   }
 
   .logo-section h1{
     font-size:18px;
+  }
+
+  .menu-icon{
+    margin-left:10px;
   }
 
   #fullscreen-menu a{
