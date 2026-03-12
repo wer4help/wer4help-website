@@ -70,31 +70,33 @@ Home </a>
 
 <a href="{{ url_for('about') }}" 
 class="{% if request.endpoint == 'about' %}active{% endif %}">
-About </a>
+About Us</a>
 
-<a href="{{ url_for('leadership') }}" 
-class="{% if request.endpoint == 'leadership' %}active{% endif %}">
-Leadership Legacy </a>
+<a href="{{ url_for('acknowledgment') }}" 
+class="{% if request.endpoint == 'acknowledgment' %}active{% endif %}">
+Acknowledgment</a>
 
 <a href="{{ url_for('team') }}" 
 class="{% if request.endpoint == 'team' %}active{% endif %}">
-Team </a>
+Our Teams</a>
 
 <a href="{{ url_for('events') }}" 
 class="{% if request.endpoint == 'events' %}active{% endif %}">
 Our Events </a>
 
+<a href="{{ url_for('leadership') }}" 
+class="{% if request.endpoint == 'leadership' %}active{% endif %}">
+Leadership Legacy </a>
+
+
 <a href="{{ url_for('impact') }}" 
 class="{% if request.endpoint == 'impact' %}active{% endif %}">
 Impact & Achievements </a>
 
-<a href="{{ url_for('acknowledgment') }}" 
-class="{% if request.endpoint == 'acknowledgment' %}active{% endif %}">
-Acknowledgment </a>
 
 <a href="{{ url_for('contact') }}" 
 class="{% if request.endpoint == 'contact' %}active{% endif %}">
-Contact </a>
+Contact Us</a>
 
 <a href="{{ url_for('donate') }}" 
 class="donate-btn {% if request.endpoint == 'donate' %}active{% endif %}">
