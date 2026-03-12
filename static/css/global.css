@@ -288,3 +288,28 @@ footer{
     width:140px;
   }
 }
+
+/* DONATE BUTTON */
+
+#fullscreen-menu .donate-btn{
+  background:#ff4b5c;
+  padding:10px 24px;
+  border-radius:25px;
+  font-size:20px;
+  color:white; /* keep text visible */
+}
+
+/* HOVER STATE */
+
+#fullscreen-menu .donate-btn:hover{
+  background:#e63c4f;
+  color:white;
+}
+
+/* ACTIVE PAGE STATE */
+
+#fullscreen-menu .donate-btn.active{
+  background:#ff4b5c;
+  color:white;
+  font-weight:600;
+}
