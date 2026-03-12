@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{% block title %}WeR4Help{% endblock %}</title>
+
+<!-- Favicon -->
+
+<link rel="icon" href="{{ url_for('static', filename='images/WRFH LOGO.png') }}">
+
+<!-- Google Font -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Global CSS -->
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+
+<!-- Page Specific CSS -->
+
+{% block css %}{% endblock %}
+
+</head>
+
+<body>
+
+<!-- =============================
+COLLEGE BANNER
+============================= -->
+
+<div class="announcement-banner">
+  <img src="{{ url_for('static', filename='images/clg_banner.png') }}" 
+       alt="GVP College Banner"
+       class="banner-img">
+</div>
+
+<!-- =============================
+HEADER
+============================= -->
+
+<header class="header-bar">
+
+  <div class="logo-section">
+    <img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" alt="WeR4Help Logo">
+    <h1>WeR4Help</h1>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()" aria-label="Open Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</header>
+
+<!-- =============================
+FULLSCREEN NAVIGATION MENU
+============================= -->
+
+<nav id="fullscreen-menu">
+
+<a href="{{ url_for('home') }}">Home</a> <a href="{{ url_for('about') }}">About</a> <a href="{{ url_for('leadership') }}">Leadership Legacy</a> <a href="{{ url_for('team') }}">Team</a> <a href="{{ url_for('events') }}">Events</a> <a href="{{ url_for('impact') }}">Impact & Achievements</a> <a href="{{ url_for('acknowledgment') }}">Acknowledgment</a> <a href="{{ url_for('contact') }}">Contact</a> <a href="{{ url_for('donate') }}" class="donate-btn">Donate</a>
+
+</nav>
+
+<!-- =============================
+MAIN PAGE CONTENT
+============================= -->
+
+<main>
+
+{% block content %}{% endblock %}
+
+</main>
+
+<!-- =============================
+FOOTER
+============================= -->
+
+<footer>
+<p>© 2026 WeR4Help • GVPCE</p>
+</footer>
+
+<!-- JS -->
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
