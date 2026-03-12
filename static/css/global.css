@@ -42,12 +42,13 @@ img{
   display:flex;
   justify-content:center;
   background:#f4f4f4;
+  overflow:hidden;
 }
 
 .banner-img{
   width:100%;
-  max-height:110px;
-  object-fit:cover;
+  height:auto;     /* prevents cropping */
+  display:block;
 }
 
 
@@ -132,7 +133,7 @@ img{
 
 
 /* =================================
-   FULLSCREEN MENU (Improved Animation)
+   FULLSCREEN MENU
 ================================= */
 
 #fullscreen-menu{
