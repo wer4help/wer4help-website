@@ -15,6 +15,3 @@ document.querySelectorAll("#fullscreen-menu a").forEach(link => {
   });
 });
 
-function joinClub(){
-  alert("Welcome to WeR4Help! Thank you for showing interest in joining our club.");
-}
