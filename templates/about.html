@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
+{% block title %}About | WeR4Help{% endblock %}
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About - WeR4Help</title>
+{% block css %}
 
 <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
 
-</head>
-
-<body>
+{% block content %}
 
 <div class="header">
 
@@ -21,7 +16,6 @@
 <img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
 
 </div>
-
 
 <p class="subtitle">
 
@@ -37,7 +31,6 @@ WeR4Help continues its journey guided by the motto:
 
 </p>
 
-
 <!-- Mentor Section -->
 
 <div class="photo-section">
@@ -51,7 +44,6 @@ WeR4Help continues its journey guided by the motto:
 
 </div>
 
-
 <div class="photo-card">
 
 <img src="{{ url_for('static', filename='images/cvnr.jpeg') }}">
@@ -60,7 +52,6 @@ WeR4Help continues its journey guided by the motto:
 <p class="photo-role">Associate Director - CFSR</p>
 
 </div>
-
 
 <div class="photo-card">
 
@@ -73,8 +64,6 @@ WeR4Help continues its journey guided by the motto:
 
 </div>
 
-
 <a href="{{ url_for('home') }}" class="btn">Back to Home</a>
 
-</body>
-</html>
+{% endblock %}
