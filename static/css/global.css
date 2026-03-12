@@ -41,13 +41,17 @@ img{
   width:100%;
   display:flex;
   justify-content:center;
+  align-items:center;
   background:#f4f4f4;
   overflow:hidden;
 }
 
+/* Banner Image */
+
 .banner-img{
   width:100%;
-  height:auto;     /* prevents cropping */
+  max-height:140px;   /* controls banner height */
+  object-fit:contain; /* keeps full image visible */
   display:block;
 }
 
@@ -67,7 +71,11 @@ img{
   top:0;
   z-index:1000;
 }
-
+@media (max-width:768px){
+  .banner-img{
+    max-height:90px;
+  }
+}
 
 /* =================================
    LOGO SECTION
