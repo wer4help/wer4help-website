@@ -1,42 +1,40 @@
 /* MAIN CONTAINER */
 
 .ack-container{
-max-width:1000px;
-margin:auto;
-padding:20px;
+max-width:900px;
+margin:60px auto;
+padding:0 30px;
 }
 
 
-/* PAGE TITLE */
+/* TITLE */
 
 .title{
 text-align:center;
-margin-top:30px;
-font-size:36px;
-color:#222;
+font-size:44px;
+margin-bottom:30px;
 }
 
 
-/* TEXT BOX */
+/* WATERMARK */
 
-.ack-box{
-margin:30px auto;
-background:white;
-padding:35px;
+.logo-watermark{
+position:absolute;
+right:8%;
+top:220px;
+width:160px;
+opacity:0.08;
+pointer-events:none;
+}
 
-border-radius:12px;
 
-box-shadow:0 5px 15px rgba(0,0,0,0.12);
+/* TEXT */
 
-line-height:1.8;
-font-size:17px;
-
+.ack-text{
+font-size:20px;
+line-height:1.9;
 text-align:justify;
-color:#444;
-}
-
-.ack-box p{
-margin-bottom:18px;
+color:#333;
 }
 
 
@@ -44,71 +42,44 @@ margin-bottom:18px;
 
 .president-section{
 text-align:center;
-margin-top:50px;
+margin-top:60px;
 }
 
 
-/* PRESIDENT PHOTO */
+/* PHOTO */
 
 .president-photo{
 width:150px;
 height:180px;
-
 object-fit:cover;
-
 border-radius:10px;
 border:3px solid #333;
-
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
 
 /* SIGNATURE */
 
 .signature{
-margin-top:10px;
-font-size:17px;
 font-style:italic;
+margin-top:10px;
 }
 
 
-/* DESIGNATION */
+/* MOBILE */
 
-.designation{
-margin-top:5px;
-color:#555;
-}
-
-
-/* MOBILE RESPONSIVE */
-
-@media (max-width:768px){
+@media(max-width:768px){
 
 .title{
-font-size:28px;
+font-size:34px;
 }
 
-.ack-box{
-padding:25px;
-font-size:15px;
+.ack-text{
+font-size:16px;
 }
 
-}
-
-@media (max-width:480px){
-
-.title{
-font-size:24px;
-}
-
-.ack-box{
-padding:20px;
-font-size:14px;
-}
-
-.president-photo{
-width:120px;
-height:150px;
+.logo-watermark{
+display:none;
 }
 
 }
