@@ -13,6 +13,7 @@ body{
   background:#ffffff;
   color:#333;
   line-height:1.6;
+  overflow-x:hidden;
 }
 
 .container{
@@ -31,6 +32,7 @@ img{
   display:block;
 }
 
+
 /* =================================
    COLLEGE BANNER
 ================================= */
@@ -48,6 +50,7 @@ img{
   object-fit:cover;
 }
 
+
 /* =================================
    HEADER
 ================================= */
@@ -64,11 +67,10 @@ img{
   z-index:1000;
 }
 
+
 /* =================================
    LOGO SECTION
 ================================= */
-
-/* ===== LOGO SECTION ===== */
 
 .logo-section{
   display:flex;
@@ -78,14 +80,10 @@ img{
   min-width:0;
 }
 
-/* logo */
-
 .logo-section img{
   height:40px;
   flex-shrink:0;
 }
-
-/* title */
 
 .logo-section h1{
   font-size:24px;
@@ -93,6 +91,8 @@ img{
   color:#222;
   white-space:nowrap;
 }
+
+
 /* =================================
    MENU ICON
 ================================= */
@@ -103,7 +103,6 @@ img{
   flex-direction:column;
   gap:6px;
   cursor:pointer;
-  flex-shrink:0;
 }
 
 .menu-icon span{
@@ -112,6 +111,7 @@ img{
   border-radius:2px;
   transition:0.3s;
 }
+
 
 /* =================================
    HAMBURGER ANIMATION
@@ -129,6 +129,7 @@ img{
   transform:rotate(-45deg) translate(6px,-6px);
 }
 
+
 /* =================================
    FULLSCREEN MENU
 ================================= */
@@ -140,13 +141,17 @@ img{
   width:100%;
   height:100vh;
   background:#111;
+
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  gap:28px;
+
+  gap:22px;
+
   transform:translateY(-100%);
   transition:transform 0.4s ease;
+
   z-index:2000;
 }
 
@@ -156,7 +161,7 @@ img{
 
 #fullscreen-menu a{
   color:white;
-  font-size:24px;
+  font-size:22px;
   font-weight:500;
   transition:0.3s;
 }
@@ -165,56 +170,16 @@ img{
   color:#ff4b5c;
 }
 
-/* Donate button */
+
+/* DONATE BUTTON */
 
 #fullscreen-menu .donate-btn{
   background:#ff4b5c;
-  padding:10px 22px;
+  padding:10px 24px;
   border-radius:25px;
-}
-
-/* =================================
-   HERO SECTION
-================================= */
-
-.hero{
-  text-align:center;
-  padding:80px 20px;
-  min-height:60vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.hero-content{
-  max-width:600px;
-}
-
-.hero h2{
-  font-size:40px;
-  margin-bottom:20px;
-}
-
-.tagline{
   font-size:20px;
-  color:#555;
-  margin-bottom:30px;
 }
 
-.join-btn{
-  padding:12px 28px;
-  background:#2b7cff;
-  color:white;
-  border:none;
-  border-radius:6px;
-  font-size:16px;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.join-btn:hover{
-  background:#1a5fd4;
-}
 
 /* =================================
    FOOTER
@@ -228,17 +193,12 @@ footer{
   margin-top:40px;
 }
 
+
 /* =================================
    RESPONSIVE DESIGN
 ================================= */
 
-/* ===== TABLET ===== */
-
 @media (max-width:768px){
-
-  .header-bar{
-    padding:12px 16px;
-  }
 
   .logo-section img{
     height:38px;
@@ -248,61 +208,20 @@ footer{
     font-size:22px;
   }
 
-  .hero h2{
-    font-size:32px;
-  }
-
-  .tagline{
-    font-size:18px;
-  }
-
-  #fullscreen-menu a{
-    font-size:22px;
-  }
-
 }
 
-/* ===== MOBILE ===== */
-
 @media (max-width:480px){
-
-  .header-bar{
-    padding:10px 14px;
-  }
 
   .logo-section img{
     height:34px;
   }
 
- .logo-section h1{
-  font-size:18px;
-}
-
-  .menu-icon{
-  width:28px;
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-  cursor:pointer;
-  flex-shrink:0;
-  margin-left:10px;
-}
-  }
-
-  .hero{
-    padding:60px 15px;
-  }
-
-  .hero h2{
-    font-size:26px;
-  }
-
-  .tagline{
-    font-size:16px;
+  .logo-section h1{
+    font-size:18px;
   }
 
   #fullscreen-menu a{
-    font-size:18px;
+    font-size:20px;
   }
 
 }
