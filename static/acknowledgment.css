@@ -1,50 +1,35 @@
-/* =================================
-   MAIN CONTAINER
-================================= */
-
-.ack-container{
-max-width:900px;
-margin:60px auto;
-padding:0 25px;
+body{
+font-family: Arial, sans-serif;
+background:#f4f4f4;
+text-align:center;
+margin:0;
 }
 
 
-/* =================================
-   TITLE
-================================= */
+/* HEADER */
+
+.header{
+position:relative;
+padding-top:40px;
+}
 
 .title{
-text-align:center;
 font-size:42px;
-margin-bottom:30px;
-color:#222;
 }
 
 
-/* =================================
-   WATERMARK
-================================= */
-
-.logo-watermark{
-position:absolute;
-right:8%;
-top:220px;
-width:150px;
-opacity:0.08;
-pointer-events:none;
-}
-
-
-/* =================================
-   TEXT CONTENT
-================================= */
+/* PARAGRAPH BLOCK (same style as about page) */
 
 .ack-text{
-font-size:19px;
-line-height:1.9;
+width:900px;
+max-width:90%;
+margin:30px auto;
+
+font-size:18px;
+color:#444;
+line-height:1.7;
+
 text-align:justify;
-color:#333;
-margin-bottom:30px;
 }
 
 .ack-text p{
@@ -52,24 +37,32 @@ margin-bottom:18px;
 }
 
 
-/* =================================
-   PRESIDENT SECTION
-================================= */
+/* WATERMARK */
 
-.president-section{
-text-align:center;
-margin-top:60px;
+.logo-watermark{
+position:absolute;
+right:60px;
+top:20px;
+width:130px;
+opacity:0.15;
 }
 
 
-/* PRESIDENT PHOTO */
+/* PRESIDENT SECTION */
+
+.president-section{
+text-align:center;
+margin-top:50px;
+}
+
+
+/* PHOTO */
 
 .president-photo{
 width:150px;
-height:180px;
-object-fit:cover;
-border-radius:10px;
-border:3px solid #333;
+height:auto;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.2);
 margin-bottom:12px;
 }
 
@@ -79,54 +72,12 @@ margin-bottom:12px;
 .signature{
 font-style:italic;
 margin-top:10px;
-font-size:18px;
 }
+
+
+/* DESIGNATION */
 
 .designation{
-color:#555;
-margin-top:6px;
-}
-
-
-/* =================================
-   RESPONSIVE DESIGN
-================================= */
-
-@media (max-width:768px){
-
-.title{
-font-size:34px;
-}
-
-.ack-text{
-font-size:16px;
-line-height:1.8;
-}
-
-.logo-watermark{
-display:none;
-}
-
-.president-photo{
-width:120px;
-height:150px;
-}
-
-}
-
-
-@media (max-width:480px){
-
-.ack-container{
-padding:0 18px;
-}
-
-.title{
-font-size:28px;
-}
-
-.ack-text{
-font-size:15px;
-}
-
+color:#666;
+margin-top:5px;
 }
