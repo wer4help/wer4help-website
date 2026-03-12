@@ -34,13 +34,18 @@ body{
 /* WATERMARK */
 
 .logo-watermark{
-    position:absolute;
-    right:60px;
-    top:20px;
-    width:130px;
-    opacity:0.15;
-}
+  position:fixed;          /* stays centered even while scrolling */
+  top:50%;
+  left:50%;
 
+  transform:translate(-50%, -50%);
+
+  width:220px;             /* adjust size if needed */
+  opacity:0.06;            /* watermark effect */
+
+  pointer-events:none;     /* prevents blocking clicks */
+  z-index:-1;              /* stays behind text */
+}
 
 /* PHOTO SECTION */
 
@@ -94,7 +99,11 @@ body{
     color:#666;
     margin-bottom:15px;
 }
-
+@media (max-width:768px){
+  .logo-watermark{
+    width:140px;
+  }
+}
 
 /* BUTTON */
 

@@ -93,6 +93,19 @@ img{
   white-space:nowrap;
 }
 
+.logo-watermark{
+  position:fixed;          /* stays centered even while scrolling */
+  top:50%;
+  left:50%;
+
+  transform:translate(-50%, -50%);
+
+  width:220px;             /* adjust size if needed */
+  opacity:0.06;            /* watermark effect */
+
+  pointer-events:none;     /* prevents blocking clicks */
+  z-index:-1;              /* stays behind text */
+}
 
 /* =================================
    MENU ICON
@@ -261,4 +274,9 @@ footer{
     font-size:20px;
   }
 
+}
+@media (max-width:768px){
+  .logo-watermark{
+    width:140px;
+  }
 }
