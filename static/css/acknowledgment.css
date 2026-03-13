@@ -118,18 +118,17 @@ margin-bottom:18px;
 @media (max-width:768px){
 
 .president-section{
-    width:90%;
-    margin:50px auto;
+    width:900px;
+    max-width:90%;
+    margin:60px auto;
 
     display:flex;
-    justify-content:flex-end; /* keep it right aligned */
+    justify-content:center;   /* center the whole block */
 }
-
 .president-sign{
-    width:auto;
-    max-width:200px; /* smaller block on mobile */
+    width:260px;
+    text-align:left;
 }
-
 .president-photo{
     width:clamp(110px, 18vw, 150px);
     height:auto;
