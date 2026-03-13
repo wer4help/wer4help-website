@@ -1,39 +1,102 @@
 {% extends "base.html" %}
 
-{% block title %}Orientation | WeR4Help{% endblock %}
+{% block title %}Impact & Achievements | WeR4Help{% endblock %}
 
 {% block css %}
 
-<link rel="stylesheet" href="{{ url_for('static', filename='css/impact.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/events.css') }}">
+
 {% endblock %}
 
 {% block content %}
 
+<div class="header">
+
+<h1 class="title">Impact & Achievements</h1>
+
 <img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
-
-<h1 class="title">Orientation Program</h1>
-
-<p class="subtitle">
-The orientation program introduces new members to WeR4Help activities,
-volunteering opportunities, and the impact of community service.
-</p>
-
-<div class="orientation-box">
-
-<p>
-During the orientation session, students learn about the mission of
-WeR4Help, previous social initiatives, and how they can actively
-participate in volunteering activities organized by the club.
-</p>
-
-<p>
-The program helps students understand the importance of social
-responsibility and encourages them to contribute to meaningful
-community projects.
-</p>
 
 </div>
 
+<p class="subtitle">
+Key milestones and achievements of WeR4Help.
+</p>
 
+<div class="events-section">
+
+<!-- 1 -->
+
+<details class="event-box">
+<summary>Club Banner Relaunch</summary>
+
+<p style="padding:20px;">
+The club banner was redesigned and relaunched to represent the renewed vision and identity of WeR4Help, strengthening its presence within the campus community.
+</p>
+
+</details>
+
+
+<!-- 2 -->
+
+<details class="event-box">
+<summary>Launch of Aashraya Connect</summary>
+
+<p style="padding:20px;">
+Aashraya Connect was introduced as a platform to expand the outreach of the club and strengthen connections with social initiatives and communities in need.
+</p>
+
+</details>
+
+
+<!-- 3 -->
+
+<details class="event-box">
+<summary>Record Breaking Tenure</summary>
+
+<p style="padding:20px;">
+This tenure marked one of the most active periods of the club with a record number of initiatives, volunteer participation, and impactful activities conducted throughout the year.
+</p>
+
+</details>
+
+
+<!-- 4 -->
+
+<details class="event-box">
+<summary>Institutional Domain Email</summary>
+
+<p style="padding:20px;">
+The club officially adopted an institutional domain email (wer4help@gvpce.ac.in), strengthening its professional identity and communication with organizations.
+</p>
+
+</details>
+
+
+<!-- 5 -->
+
+<details class="event-box">
+<summary>Media Recognition</summary>
+
+<ul style="padding:20px; margin:0;">
+<li>Newspaper Coverage</li>
+<li>Earned a feature on YouTube</li>
+</ul>
+
+</details>
+
+
+<!-- 6 -->
+
+<details class="event-box">
+<summary>Donation of a Table Fan</summary>
+
+<p style="padding:20px;">
+A table fan was donated to support the needs of a community member, reflecting the club’s commitment to meaningful and practical assistance.
+</p>
+
+</details>
+
+
+</div>
 
 {% endblock %}
