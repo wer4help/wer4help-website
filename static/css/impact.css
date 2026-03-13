@@ -1,30 +1,60 @@
-.orientation-box{
-    width:700px;
-    max-width:90%;
-    margin:40px auto;
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    line-height:1.7;
-    font-size:18px;
+/* ==============================
+   IMPACT CONTENT
+============================== */
+
+.content-box{
+    padding:20px;
 }
 
-/* back button animation */
 
-.back-btn{
-    display:inline-block;
-    margin-top:40px;
-    padding:12px 25px;
-    background:#2b7cff;
-    color:white;
-    text-decoration:none;
+/* IMAGE CENTER */
+
+.impact-img{
+    display:block;
+    margin:0 auto 20px auto;
+    max-width:100%;
     border-radius:8px;
-    transition:0.3s;
 }
 
-.back-btn:hover{
-    background:#1a5fd1;
-    transform:translateY(-4px);
-    box-shadow:0 8px 18px rgba(0,0,0,0.2);
+
+/* JUSTIFIED TEXT */
+
+.content-box p{
+    text-align:justify;
+    line-height:1.7;
+}
+
+
+/* VIDEO EMBED */
+
+.video-container{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+}
+
+.video-container iframe{
+    width:100%;
+    max-width:560px;
+    height:315px;
+    border-radius:8px;
+}
+/* SUB BOXES INSIDE MEDIA RECOGNITION */
+
+.media-box{
+    background:#fafafa;
+    border-radius:8px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+
+/* SUB HEADINGS */
+
+.sub-heading{
+    text-align:center;
+    margin-bottom:15px;
+    font-size:18px;
+    font-weight:600;
 }
