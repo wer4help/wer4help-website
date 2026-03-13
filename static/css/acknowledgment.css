@@ -52,14 +52,16 @@ body{
 .president-section{
     width:900px;
     max-width:90%;
-    margin:0 auto 60px auto;
+    margin:60px auto;
+
+    display:flex;
+    justify-content:flex-end;   /* pushes signature to right edge */
 }
 
 /* SIGNATURE BLOCK */
 
 .president-sign{
     width:300px;
-    margin-left:auto;
     text-align:left;
 }
 
@@ -117,4 +119,12 @@ body{
         width:140px;
     }
 
+}
+.president-photo{
+    width:150px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.2);
+    margin-bottom:12px;
+
+    display:inline-block; /* override global.css */
 }
