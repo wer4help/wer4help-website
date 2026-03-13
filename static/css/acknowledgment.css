@@ -28,7 +28,7 @@ pointer-events:none;
 z-index:-1;
 }
 
-/* MAIN CONTENT CONTAINER */
+/* CONTENT WIDTH */
 
 .content-container{
 width:900px;
@@ -36,14 +36,13 @@ max-width:90%;
 margin:30px auto;
 }
 
-/* TEXT CONTENT */
+/* TEXT */
 
 .ack-text{
 font-size:18px;
 color:#444;
 line-height:1.7;
 text-align:justify;
-text-justify:inter-word;
 }
 
 .ack-text p{
@@ -53,14 +52,17 @@ margin-bottom:18px;
 /* PRESIDENT SECTION */
 
 .president-section{
+width:100%;
 margin-top:60px;
+display:flex;
+justify-content:flex-end;
+padding-right:40px;
 }
 
 /* SIGNATURE BLOCK */
 
 .president-sign{
-width:280px;
-margin-left:auto;      /* pushes signature to right */
+width:260px;
 text-align:left;
 }
 
@@ -73,7 +75,7 @@ box-shadow:0 6px 18px rgba(0,0,0,0.2);
 margin:12px 0;
 }
 
-/* SIGNATURE TEXT */
+/* SIGNATURE */
 
 .signature{
 font-style:italic;
@@ -103,20 +105,6 @@ font-size:32px;
 
 .ack-text{
 font-size:17px;
-}
-
-/* full width section so signature can go to screen edge */
-
-.president-section{
-width:100%;
-padding-right:20px;
-}
-
-/* keep signature pushed fully right */
-
-.president-sign{
-width:220px;
-margin-left:auto;
 }
 
 .president-photo{
