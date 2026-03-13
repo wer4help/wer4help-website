@@ -205,8 +205,29 @@ img{
   color:#ff4b5c;
   transform:scale(1.05);
 }
+/* Hide hamburger when menu is open */
 
+#fullscreen-menu.active ~ .header-bar .menu-icon,
+#fullscreen-menu.active + main ~ footer .menu-icon{
+    display:none;
+}
+/* CLOSE BUTTON FOR FULLSCREEN MENU */
 
+.menu-close{
+    position:absolute;
+    top:25px;
+    right:30px;
+
+    font-size:34px;
+    color:white;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.menu-close:hover{
+    transform:scale(1.2);
+}
 /* =================================
    ACTIVE PAGE HIGHLIGHT
 ================================= */
@@ -277,7 +298,10 @@ footer{
   .menu-icon{
     margin-left:10px;
   }
-
+.menu-icon.open{
+    opacity:0;
+    pointer-events:none;
+}
   #fullscreen-menu a{
     font-size:20px;
   }

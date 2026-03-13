@@ -64,6 +64,8 @@ FULLSCREEN NAVIGATION MENU
 
 <nav id="fullscreen-menu">
 
+<div class="menu-close" onclick="toggleMenu()">✕</div>
+
 <a href="{{ url_for('home') }}" 
 class="{% if request.endpoint == 'home' %}active{% endif %}">
 Home </a>
