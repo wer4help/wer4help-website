@@ -51,12 +51,18 @@ margin-bottom:18px;
 
 /* PRESIDENT SECTION */
 
+/* PRESIDENT SECTION */
+
 .president-section{
 width:100%;
 margin-top:60px;
 display:flex;
-justify-content:flex-end;   /* move block to right */
-padding-right:40px;
+}
+
+.president-sign{
+width:260px;
+text-align:left;
+margin-left:auto;   /* pushes block to the right */
 }
 
 /* SIGNATURE BLOCK */
@@ -113,20 +119,10 @@ font-size:17px;
 width:140px;
 }
 
-/* Fix right spacing on mobile */
-
-.president-section{
-justify-content:flex-end;
-padding-right:20px;
-}
-
-/* Slightly smaller block */
-
 .president-sign{
 width:220px;
+margin-left:auto;   /* keeps it on right on mobile */
 }
-
-/* Smaller photo */
 
 .president-photo{
 width:120px;
