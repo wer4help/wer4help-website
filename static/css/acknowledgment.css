@@ -151,3 +151,18 @@ margin-bottom:18px;
 }
 
 }
+@media (max-width:768px){
+
+.president-section{
+    padding-right:20px;
+}
+
+.president-sign{
+    max-width:220px;
+}
+
+.president-photo{
+    width:120px;
+}
+
+}
