@@ -7,7 +7,6 @@ body{
 /* HEADER */
 
 .header{
-    position:relative;
     text-align:center;
     padding-top:40px;
 }
@@ -29,18 +28,21 @@ body{
     z-index:-1;
 }
 
-/* TEXT CONTENT */
+/* MAIN CONTENT WIDTH */
 
-.ack-text{
+.content-container{
     width:900px;
     max-width:90%;
     margin:30px auto;
+}
 
+/* TEXT */
+
+.ack-text{
     font-size:18px;
     color:#444;
     line-height:1.7;
     text-align:justify;
-    text-justify:inter-word;
 }
 
 .ack-text p{
@@ -50,18 +52,14 @@ body{
 /* PRESIDENT SECTION */
 
 .president-section{
-    width:900px;
-    max-width:90%;
-    margin:60px auto;
-
-    display:flex;
-    justify-content:flex-end;   /* pushes signature to right edge */
+    margin-top:60px;
 }
 
 /* SIGNATURE BLOCK */
 
 .president-sign{
-    width:300px;
+    width:280px;
+    margin-left:auto;   /* pushes block right */
     text-align:left;
 }
 
@@ -71,14 +69,13 @@ body{
     width:150px;
     border-radius:12px;
     box-shadow:0 6px 18px rgba(0,0,0,0.2);
-    margin-bottom:12px;
+    margin:12px 0;
 }
 
-/* SIGNATURE TEXT */
+/* SIGNATURE */
 
 .signature{
     font-style:italic;
-    margin-top:10px;
     font-size:18px;
 }
 
@@ -99,32 +96,24 @@ body{
 
 @media (max-width:768px){
 
-    .title{
-        font-size:32px;
-    }
-
-    .ack-text{
-        font-size:17px;
-    }
-
-    .president-sign{
-        width:220px;
-    }
-
-    .president-photo{
-        width:130px;
-    }
-
-    .logo-watermark{
-        width:140px;
-    }
-
+.title{
+    font-size:32px;
 }
-.president-photo{
-    width:150px;
-    border-radius:12px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.2);
-    margin-bottom:12px;
 
-    display:inline-block; /* override global.css */
+.ack-text{
+    font-size:17px;
+}
+
+.president-sign{
+    width:220px;
+}
+
+.president-photo{
+    width:130px;
+}
+
+.logo-watermark{
+    width:140px;
+}
+
 }
