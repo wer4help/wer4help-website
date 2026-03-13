@@ -1,19 +1,85 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %}Impact & Achievements | WeR4Help{% endblock %}
+<head>
 
-{% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/events.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/impact.css') }}">
-{% endblock %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{% block content %}
+<title>Impact & Achievements | WeR4Help</title>
+
+<link rel="icon" href="static/images/WRFH LOGO.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/global.css">
+<link rel="stylesheet" href="static/css/events.css">
+<link rel="stylesheet" href="static/css/impact.css">
+
+</head>
+
+<body>
+
+<!-- =============================
+COLLEGE BANNER
+============================= -->
+
+<div class="announcement-banner">
+  <img src="static/images/clg_banner.png" 
+       alt="GVP College Banner"
+       class="banner-img">
+</div>
+
+<!-- =============================
+HEADER
+============================= -->
+
+<header class="header-bar">
+
+  <div class="logo-section">
+    <img src="static/images/WRFH LOGO.png" alt="WeR4Help Logo">
+    <h1><b>WeR4Help</b></h1>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()" aria-label="Open Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</header>
+
+<!-- =============================
+FULLSCREEN NAVIGATION MENU
+============================= -->
+
+<nav id="fullscreen-menu">
+
+<div class="menu-close" onclick="toggleMenu()">✕</div>
+
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="acknowledgment.html">Acknowledgment</a>
+<a href="team.html">Our Teams</a>
+<a href="events.html">Our Events</a>
+<a href="leadership.html">Leadership Legacy</a>
+<a href="impact.html">Impact & Achievements</a>
+<a href="contact.html">Contact Us</a>
+<a href="donate.html" class="donate-btn">Donate</a>
+
+</nav>
+
+<!-- =============================
+MAIN PAGE CONTENT
+============================= -->
+
+<main>
 
 <div class="header">
 
 <h1 class="title">Impact & Achievements</h1>
 
-<img src="{{ url_for('static', filename='images/WRFH LOGO.png') }}" class="logo-watermark">
+<img src="static/images/WRFH LOGO.png" class="logo-watermark">
 
 </div>
 
@@ -29,7 +95,7 @@ Key milestones and achievements of WeR4Help.
 
 <div class="content-box">
 
-<img src="{{ url_for('static', filename='images/impact/banner_relaunch.jpeg') }}" class="impact-img">
+<img src="static/images/impact/banner_relaunch.jpeg" class="impact-img">
 
 <p>
 🎉Delighted to share that our club banner is finally here!! 
@@ -66,7 +132,7 @@ AASHRAYA CONNECT is more than a form it is a bridge between past efforts, presen
 This form and its framework were introduced during the 2025-26 tenure of the Student President, and the original attribution shall remain unchanged across all future tenures.
 </p>
 
-<a href="{{ url_for('static', filename='images/impact/AASHRAYA CONNECT.pdf') }}" target="_blank" class="pdf-btn">
+<a href="static/images/impact/AASHRAYA CONNECT.pdf" target="_blank" class="pdf-btn">
 Open Aashraya Connect Form
 </a>
 
@@ -81,7 +147,7 @@ Open Aashraya Connect Form
 
 <div class="content-box">
 
-<img src="{{ url_for('static', filename='images/impact/record_tenure.jpeg') }}" class="impact-img">
+<img src="static/images/impact/record_tenure.jpeg" class="impact-img">
 
 <p>
 This 2025-26 tenure has truly taken the club's growth 📈 graph to new heights and stands among the best of all previous tenures with 11+ powerful initiatives where every event reflected purpose, passion and impact ✨. Not just events, we ensured 12 continuous months of grocery distribution and medical support to our adopted families, showing consistency in service and even made the meaningful contribution of a table fan, something that had never been achieved before 🙌.
@@ -102,7 +168,7 @@ This isn't just a tenure. It is a journey of growth, unity and meaningful impact
 
 <div class="content-box">
 
-<img src="{{ url_for('static', filename='images/impact/domain_email.jpeg') }}" class="impact-img">
+<img src="static/images/impact/domain_email.jpeg" class="impact-img">
 
 <p>
 🚀 A big step forward for our club's growth and recognition.
@@ -125,7 +191,7 @@ This milestone was made possible through the strong leadership of our Student Pr
 
 <h3 class="sub-heading">Newspaper Coverage</h3>
 
-<img src="{{ url_for('static', filename='images/impact/newspaper.jpeg') }}" class="impact-img">
+<img src="static/images/impact/newspaper.jpeg" class="impact-img">
 
 <p>
 The initiatives and community service efforts of WeR4Help received recognition in local newspapers. 
@@ -140,14 +206,20 @@ contributions to the community.
 
 <h3 class="sub-heading">Earned a Feature on YouTube</h3>
 
-
-
 <div class="video-container">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qp_dZLkCl_Q?si=-cvQ1z-M7p8AW02f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/qp_dZLkCl_Q?si=-cvQ1z-M7p8AW02f"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
 </iframe>
 
-</div><br>
+</div>
+
+<br>
+
 <p style="text-align:center;">
 The work speaks for itself. Recognition follows 📈⭐
 </p>
@@ -165,7 +237,7 @@ The work speaks for itself. Recognition follows 📈⭐
 
 <div class="content-box">
 
-<img src="{{ url_for('static', filename='images/impact/table_fan.jpeg') }}" class="impact-img">
+<img src="static/images/impact/table_fan.jpeg" class="impact-img">
 
 <p>
 Deeply thankful 💐 to Professor P. Veerabhadra Rao Garu Dean of Infrastructure Planning and Development - Gvpce, for standing with us. His kindness didn't just support an initiative, it made a real difference in someone's life 💫.
@@ -181,4 +253,13 @@ Our heartfelt thanks once again for making this act of service truly possible �
 
 </div>
 
-{% endblock %}
+</main>
+
+<footer>
+<p>© 2026 WeR4Help • GVPCE</p>
+</footer>
+
+<script src="static/js/script.js"></script>
+
+</body>
+</html>
