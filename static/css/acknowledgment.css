@@ -1,6 +1,7 @@
 body{
 font-family: Arial, sans-serif;
 background:#f4f4f4;
+text-align:center;
 margin:0;
 }
 
@@ -10,7 +11,6 @@ margin:0;
 .header{
 position:relative;
 padding-top:40px;
-text-align:center;
 }
 
 .title{
@@ -18,7 +18,7 @@ font-size:42px;
 }
 
 
-/* CONTENT BLOCK */
+/* PARAGRAPH BLOCK (same style as about page) */
 
 .ack-text{
 width:900px;
@@ -28,6 +28,7 @@ margin:30px auto;
 font-size:18px;
 color:#444;
 line-height:1.7;
+
 text-align:justify;
 }
 
@@ -35,94 +36,78 @@ text-align:justify;
 margin-bottom:18px;
 }
 
-
+@media (max-width:768px){
+  .logo-watermark{
+    width:140px;
+  }
+}
 /* WATERMARK */
 
 .logo-watermark{
-position:fixed;
-top:50%;
-left:50%;
-transform:translate(-50%, -50%);
-width:220px;
-opacity:0.06;
-pointer-events:none;
-z-index:-1;
+  position:fixed;          /* stays centered even while scrolling */
+  top:50%;
+  left:50%;
+
+  transform:translate(-50%, -50%);
+
+  width:220px;             /* adjust size if needed */
+  opacity:0.06;            /* watermark effect */
+
+  pointer-events:none;     /* prevents blocking clicks */
+  z-index:-1;              /* stays behind text */
 }
 
-@media (max-width:768px){
-.logo-watermark{
-width:140px;
-}
-}
-
-
-/* PRESIDENT SECTION */
+/* PRESIDENT SECTION (Letter style) */
 
 .president-section{
-display:flex;
-justify-content:flex-end;
-margin-top:0; /* no gap from content */
+    width:900px;
+    max-width:90%;
+    margin:60px auto;
+
+    display:flex;
+    justify-content:flex-end; /* moves block to right side */
 }
 
 
-/* SIGNATURE BLOCK */
+/* INNER SIGNATURE BLOCK */
 
 .president-sign{
-width:220px;
-text-align:left;
+    width:260px;       /* width of signature block */
+    text-align:left;   /* text aligned like letter */
 }
 
 
 /* PHOTO */
 
 .president-photo{
-width:150px;
-border-radius:12px;
-box-shadow:0 6px 18px rgba(0,0,0,0.2);
-margin-bottom:12px;
-display:block;
+    width:150px;
+    height:auto;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.2);
+    margin-bottom:12px;
 }
 
 
-/* SIGNATURE TEXT */
+/* SIGNATURE */
 
 .signature{
-font-style:italic;
-margin-top:6px;
+    font-style:italic;
+    margin-top:10px;
+    font-size:18px;
 }
 
 
 /* NAME */
 
 .president-sign h2{
-margin:6px 0;
+    margin-top:6px;
 }
 
 
 /* DESIGNATION */
 
 .designation{
-color:#666;
-line-height:1.6;
-}
-
-
-/* MOBILE */
-
-@media (max-width:768px){
-
-.president-section{
-justify-content:center;
-}
-
-.president-sign{
-width:160px;
-text-align:left;
-}
-
-.president-photo{
-width:130px;
-margin-left:0;
-}
-
+    color:#666;
+    margin-top:5px;
+    line-height:1.6;
 }
