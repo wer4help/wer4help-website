@@ -111,3 +111,44 @@ margin-bottom:18px;
     margin-top:5px;
     line-height:1.6;
 }
+
+/* ============================
+   MOBILE FIX FOR PRESIDENT
+============================ */
+
+@media (max-width:768px){
+
+.president-section{
+    width:90%;
+    margin:50px auto;
+
+    display:flex;
+    justify-content:flex-end; /* keep it right aligned */
+}
+
+.president-sign{
+    width:auto;
+    max-width:200px; /* smaller block on mobile */
+}
+
+.president-photo{
+    width:clamp(110px, 18vw, 150px);
+    height:auto;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.2);
+    margin-bottom:12px;
+}
+
+.signature{
+    font-size:16px;
+}
+
+.president-sign h2{
+    font-size:20px;
+}
+
+.designation{
+    font-size:14px;
+}
+
+}
