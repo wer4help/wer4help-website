@@ -55,7 +55,7 @@ margin-bottom:18px;
 width:100%;
 margin-top:60px;
 display:flex;
-justify-content:flex-end;
+justify-content:flex-end;   /* move block to right */
 padding-right:40px;
 }
 
@@ -63,7 +63,7 @@ padding-right:40px;
 
 .president-sign{
 width:260px;
-text-align:left;
+text-align:left;   /* text inside block aligned left */
 }
 
 /* PHOTO */
@@ -73,6 +73,7 @@ width:150px;
 border-radius:12px;
 box-shadow:0 6px 18px rgba(0,0,0,0.2);
 margin:12px 0;
+display:block;
 }
 
 /* SIGNATURE */
@@ -93,6 +94,7 @@ margin:6px 0 4px;
 .designation{
 color:#666;
 line-height:1.6;
+text-align:left;
 }
 
 /* MOBILE */
@@ -107,12 +109,27 @@ font-size:32px;
 font-size:17px;
 }
 
-.president-photo{
-width:130px;
-}
-
 .logo-watermark{
 width:140px;
+}
+
+/* Fix right spacing on mobile */
+
+.president-section{
+justify-content:flex-end;
+padding-right:20px;
+}
+
+/* Slightly smaller block */
+
+.president-sign{
+width:220px;
+}
+
+/* Smaller photo */
+
+.president-photo{
+width:120px;
 }
 
 }
