@@ -3,7 +3,6 @@
 {% block title %}Contact | WeR4Help{% endblock %}
 
 {% block css %}
-
 <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
 {% endblock %}
 
@@ -15,27 +14,46 @@
 
 <div class="contact-container">
 
-<a href="mailto:wer4help@gvpce.ac.in" class="contact-card email-card">
+<a href="mailto:wer4help@gvpce.ac.in" class="contact-card">
+<div class="contact-content">
+<img src="{{ url_for('static', filename='images/email.png') }}" class="contact-icon">
+<div>
 <h2>Email</h2>
 <p>wer4help@gvpce.ac.in</p>
+</div>
+</div>
 </a>
 
-<a href="tel:+917075214131" class="contact-card phone-card">
+<a href="tel:+917075214131" class="contact-card">
+<div class="contact-content">
+<img src="{{ url_for('static', filename='images/phone.png') }}" class="contact-icon">
+<div>
 <h2>Phone</h2>
 <p>+91 7075214131</p>
+</div>
+</div>
 </a>
 
-<a href="https://www.instagram.com/wer4help_gvpce" target="_blank" class="contact-card insta-card">
+<a href="https://www.instagram.com/wer4help_gvpce" target="_blank" class="contact-card">
+<div class="contact-content">
+<img src="{{ url_for('static', filename='images/instagram.jpg') }}" class="contact-icon">
+<div>
 <h2>Instagram</h2>
 <p>@wer4help_gvpce</p>
+</div>
+</div>
 </a>
 
-<a href="https://www.linkedin.com/company/wer4help" target="_blank" class="contact-card linkedin-card">
+<a href="https://www.linkedin.com/company/wer4help" target="_blank" class="contact-card">
+<div class="contact-content">
+<img src="{{ url_for('static', filename='images/linkedin.png') }}" class="contact-icon">
+<div>
 <h2>LinkedIn</h2>
 <p>WeR4Help</p>
+</div>
+</div>
 </a>
 
 </div>
-
 
 {% endblock %}
