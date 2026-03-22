@@ -112,6 +112,17 @@ font-size:15px;
 }
 
 }
+.team-img-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap; /* makes it responsive on mobile */
+}
+
+.team-img {
+  width: 45%;
+  border-radius: 10px;
+}
 
 @media (max-width:480px){
 
