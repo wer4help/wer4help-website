@@ -20,7 +20,7 @@ font-size:42px;
 margin-bottom:10px;
 }
 
-/* PARAGRAPH */
+/* PARAGRAPH (same as about page) */
 
 .subtitle{
 width:900px;
@@ -86,49 +86,37 @@ margin:6px 0;
 font-size:16px;
 color:#444;
 }
-
-/* =========================
-✨ HIGHLIGHT + GLOW (GLOBAL)
-========================= */
-
-.leader-box.highlight {
-  border: 2px solid gold;
-  background: linear-gradient(145deg, #fff8dc, #fff);
-  position: relative;
-  z-index: 1;
-  border-radius: 12px;
-}
-
-.leader-box.highlight::before {
+/* SHIMMER EFFECT */
+.leader-box.highlight::after {
   content: "";
-  position: absolute;
-  inset: -3px;
-  border-radius: 12px;
-  background: linear-gradient(45deg, gold, orange, gold, #ffd700);
-  z-index: -1;
-  filter: blur(12px);
-  opacity: 0.7;
-  animation: glowMove 6s linear infinite;
+  position: relative;
+  overflow: hidden; /* VERY IMPORTANT for shimmer */
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 215, 0, 0.6),
+    transparent
+  );
+  transform: skewX(-25deg);
+ animation: shimmerMove 6s infinite;
 }
 
-@keyframes glowMove {
+/* SHIMMER ANIMATION */
+@keyframes shimmerMove {
   0% {
-    transform: rotate(0deg);
-    opacity: 0.5;
-  }
-  50% {
-    transform: rotate(180deg);
-    opacity: 0.8;
+    left: -75%;
   }
   100% {
-    transform: rotate(360deg);
-    opacity: 0.5;
+    left: 125%;
   }
 }
 
-/* =========================
-📱 MOBILE RESPONSIVE
-========================= */
+
+/* MOBILE RESPONSIVE */
 
 @media (max-width:768px){
 
@@ -151,11 +139,7 @@ font-size:18px;
 .leader-box p{
 font-size:15px;
 }
-
 }
-
-/* SMALL MOBILE */
-
 @media (max-width:480px){
 
 .title{
