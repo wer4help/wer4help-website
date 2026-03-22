@@ -88,24 +88,74 @@ color:#444;
 }
 
 /* =========================
-🏆 GOLDEN HIGHLIGHT CARDS
+🏆 PREMIUM GOLD CARD
 ========================= */
 
 .leadership-section .leader-box.highlight {
-  background: linear-gradient(145deg, #fff8dc, #fff3b0) !important;
-  border: 2px solid gold !important;
+  background: linear-gradient(
+    145deg,
+    #ffd700,
+    #ffcc00,
+    #ffb700,
+    #ffd700
+  );
+
+  border: 2px solid #e6b800;
+  border-radius: 14px;
+
+  color: #3b2f00;
+
   box-shadow: 
-    0 0 10px rgba(255, 215, 0, 0.6),
-    0 0 25px rgba(255, 215, 0, 0.4),
-    0 6px 18px rgba(0,0,0,0.12);
+    0 4px 15px rgba(255, 215, 0, 0.6),
+    inset 0 0 12px rgba(255,255,255,0.6),
+    0 8px 25px rgba(0,0,0,0.2);
+
+  position: relative;
+  overflow: hidden;
+
   animation: goldGlow 5s ease-in-out infinite;
 }
-/* OPTIONAL: Soft Glow Animation (very smooth) */
+
+/* GOLD TEXT */
+
+.leader-box.highlight h3,
+.leader-box.highlight p {
+  color: #3b2f00;
+  font-weight: 600;
+}
+
+/* ✨ SHINE EFFECT */
+
+.leader-box.highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.8),
+    transparent
+  );
+  transform: skewX(-25deg);
+  animation: shineMove 5s infinite;
+}
+
+/* 🌟 GLOW ANIMATION */
 
 @keyframes goldGlow {
   0% { box-shadow: 0 0 10px rgba(255,215,0,0.4); }
-  50% { box-shadow: 0 0 25px rgba(255,215,0,0.7); }
+  50% { box-shadow: 0 0 30px rgba(255,215,0,0.8); }
   100% { box-shadow: 0 0 10px rgba(255,215,0,0.4); }
+}
+
+/* ✨ SHINE MOVEMENT */
+
+@keyframes shineMove {
+  0% { left: -60%; }
+  100% { left: 120%; }
 }
 
 /* =========================
