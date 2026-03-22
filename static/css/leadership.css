@@ -20,7 +20,7 @@ font-size:42px;
 margin-bottom:10px;
 }
 
-/* PARAGRAPH (same as about page) */
+/* PARAGRAPH */
 
 .subtitle{
 width:900px;
@@ -87,7 +87,48 @@ font-size:16px;
 color:#444;
 }
 
-/* MOBILE RESPONSIVE */
+/* =========================
+✨ HIGHLIGHT + GLOW (GLOBAL)
+========================= */
+
+.leader-box.highlight {
+  border: 2px solid gold;
+  background: linear-gradient(145deg, #fff8dc, #fff);
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.leader-box.highlight::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 12px;
+  background: linear-gradient(45deg, gold, orange, gold, #ffd700);
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.7;
+  animation: glowMove 6s linear infinite;
+}
+
+@keyframes glowMove {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.5;
+  }
+}
+
+/* =========================
+📱 MOBILE RESPONSIVE
+========================= */
 
 @media (max-width:768px){
 
@@ -112,36 +153,9 @@ font-size:15px;
 }
 
 }
-.team-img-container {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap; /* makes it responsive on mobile */
-}
 
-.team-img {
-  width: 45%;
-  border-radius: 10px;
-}
-/* Golden Highlight Effect */
-.leader-box.highlight {
-  border: 2px solid gold;
-  background: linear-gradient(145deg, #fff8dc, #fff);
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-  position: relative;
-}
+/* SMALL MOBILE */
 
-/* Optional Glow Animation */
-.leader-box.highlight::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  border-radius: 10px;
-  background: linear-gradient(45deg, gold, orange, gold);
-  z-index: -1;
-  filter: blur(10px);
-  opacity: 0.6;
-}
 @media (max-width:480px){
 
 .title{
