@@ -123,7 +123,25 @@ font-size:15px;
   width: 45%;
   border-radius: 10px;
 }
+/* Golden Highlight Effect */
+.leader-box.highlight {
+  border: 2px solid gold;
+  background: linear-gradient(145deg, #fff8dc, #fff);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+  position: relative;
+}
 
+/* Optional Glow Animation */
+.leader-box.highlight::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, gold, orange, gold);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.6;
+}
 @media (max-width:480px){
 
 .title{
