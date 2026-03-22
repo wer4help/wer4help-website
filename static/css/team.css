@@ -83,20 +83,16 @@ summary{
 
 /* team images */
 
-.team-img-container {
+.special-row .team-img-container {
   display: flex;
   gap: 20px;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* keeps it responsive */
+  flex-wrap: wrap;
 }
 
-.team-img {
-  width: 45%;   /* instead of 100% */
-  margin-top: 20px;
-  border-radius: 12px;
+.special-row .team-img {
+  width: 45%;
 }
-
 
 /* ===== BACK BUTTON ===== */
 
