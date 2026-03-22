@@ -88,40 +88,58 @@ color:#444;
 }
 
 /* =========================
-🏆 PREMIUM GOLD CARD
+🏆 PREMIUM METALLIC GOLD CARD
 ========================= */
 
 .leadership-section .leader-box.highlight {
   background: linear-gradient(
-    145deg,
-    #ffd700,
-    #ffcc00,
-    #ffb700,
-    #ffd700
+    135deg,
+    #b8962e 0%,
+    #d4af37 25%,
+    #f5d76e 50%,
+    #d4af37 75%,
+    #a67c00 100%
   );
 
-  border: 2px solid #e6b800;
+  border: 2px solid #a67c00;
   border-radius: 14px;
 
-  color: #3b2f00;
+  color: #2b1f00;
 
   box-shadow: 
-    0 4px 15px rgba(255, 215, 0, 0.6),
-    inset 0 0 12px rgba(255,255,255,0.6),
-    0 8px 25px rgba(0,0,0,0.2);
+    inset 0 0 15px rgba(255,255,255,0.3),
+    inset 0 0 25px rgba(0,0,0,0.2),
+    0 6px 20px rgba(0,0,0,0.2);
 
   position: relative;
   overflow: hidden;
-
-  animation: goldGlow 5s ease-in-out infinite;
 }
 
 /* GOLD TEXT */
 
 .leader-box.highlight h3,
 .leader-box.highlight p {
-  color: #3b2f00;
+  color: #2b1f00;
   font-weight: 600;
+}
+
+/* ✨ TEXTURE (currency-style lines) */
+
+.leader-box.highlight::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0,0,0,0.05) 0px,
+    rgba(0,0,0,0.05) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 /* ✨ SHINE EFFECT */
@@ -130,31 +148,25 @@ color:#444;
   content: "";
   position: absolute;
   top: 0;
-  left: -60%;
+  left: -50%;
   width: 50%;
   height: 100%;
+
   background: linear-gradient(
     120deg,
     transparent,
-    rgba(255,255,255,0.8),
+    rgba(255,255,255,0.6),
     transparent
   );
-  transform: skewX(-25deg);
-  animation: shineMove 5s infinite;
+
+  transform: skewX(-20deg);
+  animation: shineMove 6s infinite;
 }
 
-/* 🌟 GLOW ANIMATION */
-
-@keyframes goldGlow {
-  0% { box-shadow: 0 0 10px rgba(255,215,0,0.4); }
-  50% { box-shadow: 0 0 30px rgba(255,215,0,0.8); }
-  100% { box-shadow: 0 0 10px rgba(255,215,0,0.4); }
-}
-
-/* ✨ SHINE MOVEMENT */
+/* SHINE ANIMATION */
 
 @keyframes shineMove {
-  0% { left: -60%; }
+  0% { left: -50%; }
   100% { left: 120%; }
 }
 
